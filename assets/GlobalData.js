@@ -1,28 +1,28 @@
 export default function globals() {
   const socialsHH = {
-    meetup: {
-      url: 'https://www.meetup.com/Austin-Hispanic-Hackers-Meetup/',
-      alt: 'Hispanic Hackers Meetup',
+    facebook: {
+      url: 'https://www.facebook.com/hispanichackers/',
+      alt: 'Hispanic Hackers Facebook',
     },
-    youtube: {
-      url: 'https://www.youtube.com/channel/UCxFQZs_fXzaaLLBYDWZqeHw',
-      alt: 'Hispanic Hackers Youtube',
+    googleCalender: {
+      url: 'https://calendar.google.com/calendar/u/0?cid=aGlzcGFuaWNoYWNrZXJzYm9hcmRAZ21haWwuY29t',
+      alt: 'Hispanic Hackers Google Calendar',
     },
-    slack: {
-      url: 'https://hispanichackers.slack.com/join/shared_invite/zt-8mq8l0o5-8REvn1I_QhaIb2wkE4xHfQ#/',
-      alt: 'Hispanic Hackers Slack',
+    gatherTown: {
+      url: 'https://app.gather.town/invite?token=3AhQ8rrZA24acNgFk6qU6UkZD-70iOcu',
+      alt: 'Hispanic Hackers GatherTown',
     },
     instagram: {
       url: 'https://www.instagram.com/hispanic_hackers/',
       alt: 'Hispanic Hackers Instagram',
     },
-    facebook: {
-      url: 'https://www.facebook.com/hispanichackers/',
-      alt: 'Hispanic Hackers Facebook',
-    },
     linkedin: {
       url: 'https://www.linkedin.com/groups/8933977/',
       alt: 'Hispanic Hackers LinkedIn',
+    },
+    meetup: {
+      url: 'https://www.meetup.com/Austin-Hispanic-Hackers-Meetup/',
+      alt: 'Hispanic Hackers Meetup',
     },
     twitter: {
       url: 'https://twitter.com/hispanichackers',
@@ -31,6 +31,14 @@ export default function globals() {
     tiktok: {
       url: '',
       alt: 'Hispanic Hackers TikTok',
+    },
+    youtube: {
+      url: 'https://www.youtube.com/channel/UCxFQZs_fXzaaLLBYDWZqeHw',
+      alt: 'Hispanic Hackers Youtube',
+    },
+    slack: {
+      url: 'https://hispanichackers.slack.com/join/shared_invite/zt-8mq8l0o5-8REvn1I_QhaIb2wkE4xHfQ#/',
+      alt: 'Hispanic Hackers Slack',
     },
   };
 
@@ -138,12 +146,14 @@ export default function globals() {
       },
       {
         month: 'July',
-        titleSlide: '',
-        name: 'Hackathon',
-        date: 'July 2022',
-        time: 'TBD',
-        meetup: '',
-        files: '',
+        titleSlide: '2022_jul.png',
+        name: 'Get Running with JS Frameworks',
+        date: 'July 27, 2022',
+        time: '7-9PM CST',
+        meetup:
+          'https://www.meetup.com/austin-hispanic-hackers-meetup/events/287214069/',
+        files:
+          'https://drive.google.com/drive/folders/18auKYkjzGakJRw43vk6TQlzXKBXsUpk3?usp=sharing',
         youtube: '',
       },
       {
