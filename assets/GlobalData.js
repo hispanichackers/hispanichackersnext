@@ -154,7 +154,7 @@ export default function globals() {
           'https://www.meetup.com/austin-hispanic-hackers-meetup/events/287214069/',
         files:
           'https://drive.google.com/drive/folders/18auKYkjzGakJRw43vk6TQlzXKBXsUpk3?usp=sharing',
-        youtube: '',
+        youtube: 'https://youtu.be/1oqlwBPBeDA',
       },
       {
         month: 'August',
