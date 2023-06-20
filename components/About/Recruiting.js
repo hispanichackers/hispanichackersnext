@@ -13,6 +13,10 @@ const Section = styled.h1`
 `;
 const Recruit = styled.section`
   text-align: left;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   ul {
     padding: 0;
   }
@@ -40,7 +44,7 @@ const Recruit = styled.section`
 export default function Recruiting() {
   return (
     <Section>
-      <h1>Join the Team or Get Involved</h1>
+      <h2>Join the Team or Get Involved</h2>
       <hr />
       <Recruit>
         <ul>
@@ -49,6 +53,7 @@ export default function Recruiting() {
             alt='Zoom meetup'
             width={846.5}
             height={481.5}
+            objectFit='contain'
           />
           <li>Become part of the executive team</li>
           <li>Speakers always welcome for tech/culture topics</li>

@@ -1,17 +1,10 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import {
-  FcHome,
-  FcNews,
-  FcPlanner,
-  FcConferenceCall,
-  FcWorkflow,
-} from 'react-icons/fc';
 
 const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   span {
@@ -56,37 +49,24 @@ export default function Nav({ theme, toggleTheme }) {
     <Section>
       <Link href='/'>
         <span>
-          <FcHome />
-          &nbsp;Home
-        </span>
-      </Link>
-      <Link href='/blog'>
-        <span>
-          <FcNews />
-          &nbsp;Blog
+          Home
         </span>
       </Link>
       <Link href='/events'>
         <span>
-          <FcPlanner />
-          &nbsp;Events
+          Events
         </span>
       </Link>
       <Link href='/about'>
         <span>
-          <FcConferenceCall />
-          &nbsp;About
+          About
         </span>
       </Link>
       <Link href='/links'>
         <span>
-          <FcWorkflow />
-          &nbsp;Links
+          Links
         </span>
       </Link>
-      <button onClick={() => toggleTheme(theme)}>
-        {theme == 'dark' ? <span>☀️</span> : <span>🌙</span>}
-      </button>
     </Section>
   );
 }
