@@ -7,10 +7,21 @@ const Section = styled.section`
   text-align: left;
 `;
 const ExecutiveTeam = styled.section`
-  display: flex;
+  display: grid;
+  gap: 4rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  grid-template-columns: repeat(1, 1fr);
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1536px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 export default function Team() {

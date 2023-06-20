@@ -4,12 +4,12 @@ import Menus from './Menus';
 import { FcLike } from 'react-icons/fc';
 
 const Section = styled.footer`
+  position: fixed;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  position: relative;
-  bottom: 0;
   width: 100%;
   background: ${({ theme }) => theme.backgroundContrast};
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -28,13 +28,11 @@ export default function Footer(props) {
   return (
     <Section>
       <Menus {...props} />
+      <p>
+        Made with coffee, cumbia, and care. With <FcLike /> in&nbsp;
+        {new Date().getFullYear()}.
+      </p>
       <SocialsHH />
-      <div>
-        <p>
-          Made with coffee, cumbia, and care. With <FcLike /> in&nbsp;
-          {new Date().getFullYear()}.
-        </p>
-      </div>
     </Section>
   );
 }

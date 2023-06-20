@@ -4,33 +4,21 @@ import Image from 'next/image';
 import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Aside = styled.aside`
-  text-align: center;
+  text-align: left;
+  max-width: 65ch;
   p {
     font-size: 1.8rem;
-  }
-  @media (min-width: 768px) {
-    flex: 1 1 50%;
-  }
-  @media (min-width: 1024px) {
-    flex: 1 1 30%;
-  }
-  @media (min-width: 2560px) {
-    p {
-      width: 60%;
-      margin: 0 auto;
-    }
+    line-height: 1.6;
   }
 `;
 const ProfileLinks = styled.div`
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 `;
 const Image1 = styled(Image)`
-  height: 200%;
-  width: 200%;
+  margin: 0 auto;
   border-radius: 50%;
+  display: block;
 `;
 const LinkedIn = styled(FaLinkedin)`
   color: #0073b1;

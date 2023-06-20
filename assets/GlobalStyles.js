@@ -50,6 +50,10 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 1.8rem;
     line-height:2;
+    padding-bottom: 24rem;
+    @media (min-width: 768px) {
+      padding-bottom: 12rem;
+    }
   }
   h1 {
     @media (min-width: 320px) {
