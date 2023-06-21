@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ContactButton from '../lib/ContactButton';
 
 const Section = styled.h1`
-  text-align: left;
+  text-align: center;
   a {
     text-decoration: none;
   }
