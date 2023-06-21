@@ -18,7 +18,6 @@ const Section = styled.footer`
   p {
     text-align: center;
     @media (min-width: 1440px) {
-      width: 70%;
       margin: 0 auto;
     }
   }

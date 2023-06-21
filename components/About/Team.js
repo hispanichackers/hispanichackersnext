@@ -5,8 +5,18 @@ import globals from '../../assets/GlobalData';
 
 const Section = styled.section`
   text-align: left;
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  hr {
+    margin: 1rem 0 4rem;
+  }
 `;
 const ExecutiveTeam = styled.section`
+  line-height: 1.6;
   display: grid;
   gap: 4rem;
   flex-wrap: wrap;
@@ -42,6 +52,10 @@ export default function Team() {
           linkedin={globals().profilesHH.james.linkedin}
           bio={globals().profilesHH.james.bio}
         />
+      </ExecutiveTeam>
+      <h3>Former Members</h3>
+      <hr/>
+      <ExecutiveTeam>
         <Profile
           image='/static/images/lauraE.jpg'
           name={globals().profilesHH.lauraE.name}

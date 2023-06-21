@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 const Section = styled.section`
   width: 90%;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
 `;
 
 export default function Layout(props) {

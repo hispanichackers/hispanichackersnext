@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 const Aside = styled.aside`
   text-align: left;

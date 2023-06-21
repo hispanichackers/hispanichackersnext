@@ -2,6 +2,9 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
+  h1 {
+    text-align: center;
+  }
   h2 {
     text-align: left;
   }
@@ -10,8 +13,8 @@ const Section = styled.section`
   }
   form {
     text-align: center;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 6rem auto;
+    padding: 2rem 1rem;
     border-radius: 5px;
     border: 2px solid ${({ theme }) => theme.fontColor};
     box-shadow: 0 0 5px gray;
@@ -61,19 +64,6 @@ const Section = styled.section`
       padding: 1rem;
     }
   }
-  button {
-    background: none;
-    border-radius: 5px;
-    margin: 1rem auto;
-    padding: 5px;
-    color: ${({ theme }) => theme.linkUnderline};
-    border: 2px solid ${({ theme }) => theme.linkUnderline};
-    :hover {
-      cursor: pointer;
-      color: ${({ theme }) => theme.linkUnderline};
-      border: 2px solid ${({ theme }) => theme.fontColor};
-    }
-  }
 `;
 
 export default function Contact() {
@@ -110,7 +100,7 @@ export default function Contact() {
   if (formStatus) {
     return (
       <Section id='contact'>
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
         <hr />
         <h3>Thanks for your message!</h3>
       </Section>
@@ -118,7 +108,7 @@ export default function Contact() {
   } else {
     return (
       <Section id='contact'>
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
         <hr />
         <form onSubmit={handleSubmit}>
           <div>

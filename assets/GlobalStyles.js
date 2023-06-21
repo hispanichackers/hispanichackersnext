@@ -49,7 +49,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-size: 1.8rem;
-    line-height:2;
+    line-height: 1.6;
     padding-bottom: 24rem;
     @media (min-width: 768px) {
       padding-bottom: 12rem;
@@ -86,5 +86,20 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.fontColor};
     text-decoration: none;
+  }
+  button {
+    background: transparent;
+    border-radius: 8px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: ${({ theme }) => theme.linkUnderline};
+    border: 2px solid ${({ theme }) => theme.linkUnderline};
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: ${({ theme }) => theme.linkUnderline};
+      border: 2px solid ${({ theme }) => theme.fontColor};
+    }
   }
 `;

@@ -52,7 +52,7 @@ export default function Nav({ theme, toggleTheme }) {
           Home
         </span>
       </Link>
-      <Link href='/events'>
+      <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
         <span>
           Events
         </span>
@@ -62,9 +62,14 @@ export default function Nav({ theme, toggleTheme }) {
           About
         </span>
       </Link>
-      <Link href='/links'>
+      <Link href='/sponsors'>
         <span>
-          Links
+          Sponsors
+        </span>
+      </Link>
+      <Link href='/contact'>
+        <span>
+          Contact
         </span>
       </Link>
     </Section>
