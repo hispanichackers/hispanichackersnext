@@ -16,7 +16,7 @@ const Button = styled.button`
 export default function ContactButton() {
   return (
     <Button>
-      <Link href='/links'>Contact Us</Link>
+      <Link href='/contact'>Contact Us</Link>
     </Button>
   );
 }
