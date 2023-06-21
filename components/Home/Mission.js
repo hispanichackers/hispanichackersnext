@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0 auto;
+  gap: 1rem;
   div {
     margin: 0 1rem;
   }
   @media (min-width: 768px) {
     flex-wrap: nowrap;
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
