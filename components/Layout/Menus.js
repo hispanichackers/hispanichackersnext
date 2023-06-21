@@ -14,9 +14,11 @@ const Section = styled.section`
       flex: 1 1 90%;
     }
     border: 2px solid ${({ theme }) => theme.backgroundContrast};
-    :hover {
+    &:hover {
       cursor: pointer;
+      color: ${({ theme }) => theme.linkUnderline};
       border-bottom: 2px solid ${({ theme }) => theme.linkUnderline};
+      transition: all 500ms;
     }
   }
   svg {

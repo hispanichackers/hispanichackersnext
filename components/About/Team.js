@@ -47,6 +47,18 @@ export default function Team() {
           bio={globals().profilesHH.eddy.bio}
         />
         <Profile
+          image='/static/images/andres.jpg'
+          name={globals().profilesHH.andres.name}
+          linkedin={globals().profilesHH.andres.linkedin}
+          bio={globals().profilesHH.andres.bio}
+        />
+        <Profile
+          image='/static/images/leroy.jpg'
+          name={globals().profilesHH.leroy.name}
+          linkedin={globals().profilesHH.leroy.linkedin}
+          bio={globals().profilesHH.leroy.bio}
+        />
+        <Profile
           image='/static/images/james.png'
           name={globals().profilesHH.james.name}
           linkedin={globals().profilesHH.james.linkedin}

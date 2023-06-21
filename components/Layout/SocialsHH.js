@@ -115,13 +115,6 @@ export default function Socials() {
       >
         <LinkedIn title={socialsHH.linkedin.alt} />
       </a>
-      <a
-        href={socialsHH.twitter.url}
-        alt={socialsHH.twitter.alt}
-        target='_blank'
-      >
-        <Twitter title={socialsHH.twitter.alt} />
-      </a>
     </Section>
   );
 }
