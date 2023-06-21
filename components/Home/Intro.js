@@ -6,6 +6,8 @@ const Section = styled.section`
   margin: 0 auto;
   img {
     border-radius: 3px;
+    width: 100%;
+    object-fit: cover;
   }
   @media (min-width: 1024px) {
     h4 {

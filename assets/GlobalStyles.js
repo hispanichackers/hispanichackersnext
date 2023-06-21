@@ -49,7 +49,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-size: 1.8rem;
-    line-height:2;
+    line-height: 1.6;
     padding-bottom: 24rem;
     @media (min-width: 768px) {
       padding-bottom: 12rem;

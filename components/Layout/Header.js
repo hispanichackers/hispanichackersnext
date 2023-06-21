@@ -3,7 +3,9 @@ import Image from 'next/image';
 import Menus from './Menus';
 import Link from 'next/link';
 
-const Section = styled.section`
+const Section = styled.header`
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
