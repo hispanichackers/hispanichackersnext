@@ -68,6 +68,20 @@ export default function globals() {
       linkedin: 'https://www.linkedin.com/in/timothyhoang/',
       bio: 'Tim is developer who pivoted from the medical field and work with Hispanic Hackers to promote inclusion and technology in the Austin area. He enjoys coding, trying new foods, staying active, spending time outdoors, and traveling around the world. Tim is an alumni of Lambda School.',
     },
+    andres: {
+      name: 'Andrés Barrera',
+      linkedin: 'https://www.linkedin.com/in/drebarrera',
+      website: 'https://www.drebarrera.com',
+      github: 'https://www.github.com/drebarrera',
+      bio: 'Andrés is a Full Stack Engineer with a passion for data automation, entrepreneurship, and social advocacy. With a degree in Computer Engineering from Purdue University and nine years of programming experience, he loves taking the world by surprise with tenacity and a little bit of audacity.',
+    },
+    leroy: {
+      name: 'Leroy Rosales',
+      linkedin: 'https://www.linkedin.com/in/leroyrosales/',
+      website: 'https://leroyrosales.com',
+      github: 'https://www.github.com/leroyrosales',
+      bio: 'Leroy is just a nerd that likes punk. If you had to put a label on his role, probably front-end-to-sorta-full-stack dev. When he’s not behind the computer, he’s shaking up a killer tiki cocktail, watching classic horror movies, and as he puts it: going "full dad-mode" in his new hybrid minivan.',
+    },
   };
 
   const eventsHH = {
