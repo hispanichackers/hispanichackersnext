@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Section = styled.section`
   display: flex;
@@ -7,12 +8,11 @@ const Section = styled.section`
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  gap: 1rem;
   span {
-    flex: 1 1 100%;
-    padding: 1rem;
-    @media (min-width: 1024px) {
-      flex: 1 1 90%;
-    }
+    display: flex;
+    gap: 8px;
+    align-items: center;
     border: 2px solid ${({ theme }) => theme.backgroundContrast};
     &:hover {
       cursor: pointer;
@@ -22,12 +22,7 @@ const Section = styled.section`
     }
   }
   svg {
-    width: 30px;
-    height: 30px;
-    @media (min-width: 425px) {
-      display: block;
-      margin: 0 auto;
-    }
+    width: 16px;
   }
   button {
     font-size: 20px;
@@ -56,7 +51,7 @@ export default function Nav({ theme, toggleTheme }) {
       </Link>
       <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
         <span>
-          Events
+          Events <FaExternalLinkAlt/>
         </span>
       </Link>
       <Link href='/about'>

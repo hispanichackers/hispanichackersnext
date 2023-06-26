@@ -4,6 +4,7 @@
 
 - Technologies: next.js, styled components, react-icons, remark
 
+- Updated: 2023_06_26 by Leroy Rosales, fixes broken events page, updates to npm packages, fix responsive issues with images.
 - Updated: 2022_04_28 by TH
 
 ---
