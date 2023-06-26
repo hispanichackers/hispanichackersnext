@@ -31,6 +31,7 @@ export default function Header(props) {
           height={100}
         />
       </Link>
+      <h1>Development</h1>
       <Menus {...props} />
     </Section>
   );
