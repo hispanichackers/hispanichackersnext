@@ -6,7 +6,8 @@ import {
   FaInstagram,
   FaFacebookSquare,
   FaLinkedin,
-  FaTwitterSquare,
+  FaDiscord,
+
 } from 'react-icons/fa';
 import globals from '../../assets/GlobalData';
 
@@ -19,7 +20,7 @@ const Section = styled.section`
   text-align: center;
   a {
     flex: 1 1 25%;
-    padding: 1rem;
+    padding: 1rem 0;
     :hover {
       transform: scale(1.2);
     }
@@ -28,12 +29,8 @@ const Section = styled.section`
     }
   }
   svg {
-    width: 30px;
-    height: 30px;
-    @media (min-width: 1024px) {
-      width: 40px;
-      height: 40px;
-    }
+    width: 3rem;
+    height: 3rem;
   }
   @media (min-width: 768px) {
     flex-wrap: nowrap;
@@ -59,9 +56,6 @@ const Facebook = styled(FaFacebookSquare)`
 const LinkedIn = styled(FaLinkedin)`
   color: #0073b1;
 `;
-const Twitter = styled(FaTwitterSquare)`
-  color: #0077b5;
-`;
 const Instagram = styled(FaInstagram)`
   color: white;
   border-radius: 10%;
@@ -76,11 +70,17 @@ const Instagram = styled(FaInstagram)`
   );
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 `;
+const Discord = styled(FaDiscord)`
+  color: #ffffff;
+`;
 
 export default function Socials() {
   const { socialsHH } = globals();
   return (
     <Section>
+      <a href={socialsHH.discord.url} alt={socialsHH.discord.alt} target='_blank'>
+        <Discord title={socialsHH.discord.alt} />
+      </a>
       <a href={socialsHH.meetup.url} alt={socialsHH.meetup.alt} target='_blank'>
         <Meetup title={socialsHH.meetup.alt} />
       </a>
