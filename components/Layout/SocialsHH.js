@@ -20,7 +20,7 @@ const Section = styled.section`
   text-align: center;
   a {
     flex: 1 1 25%;
-    padding: 1rem 0;
+    padding: 1rem 8px;
     :hover {
       transform: scale(1.2);
     }
