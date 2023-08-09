@@ -40,6 +40,10 @@ export default function globals() {
       url: 'https://hispanichackers.slack.com/join/shared_invite/zt-8mq8l0o5-8REvn1I_QhaIb2wkE4xHfQ#/',
       alt: 'Hispanic Hackers Slack',
     },
+    discord: {
+      url: 'https://discord.gg/67nEABfYcn',
+      alt: 'Hispanic Hackers Discord',
+    },
   };
 
   const profilesHH = {
