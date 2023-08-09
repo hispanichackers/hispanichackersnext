@@ -18,11 +18,11 @@ export default function Intro() {
     <section>
       <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center flex justify-center items-center grid grid-cols-1 sm:grid-cols-2">
         <div className="bg-orange-500/75 h-full">
-          <h1 className=" font-sans text-3xl text-white text-center my-10  font-light sm:mt-48 mx-12 ">
+          <h1 className=" font-sans text-4xl text-white text-center my-10  font-light sm:mt-48 mx-12 ">
             Join our Comunidad<br></br>of
             <span className=" font-serif  text-white text-7xl ">
               {" "}
-              Developers, Engineers,<br></br> & Entrepeneurs
+              Developers, Engineers,<br></br> & Entrepreneurs
             </span>
           </h1>
         </div>
