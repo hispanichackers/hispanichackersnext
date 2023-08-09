@@ -18,7 +18,7 @@ export default function Intro() {
     <section>
       <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center flex justify-center items-center grid grid-cols-1 sm:grid-cols-2">
         <div className="bg-orange-500/75 h-full">
-          <h1 className=" font-sans text-4xl text-white text-center my-10  font-light sm:mt-48 mx-12 ">
+          <h1 className=" font-sans text-4xl text-white text-left my-10 font-light sm:mt-28 mx-20 ">
             Join our Comunidad<br></br>of
             <span className=" font-serif  text-white text-7xl ">
               {" "}
@@ -27,7 +27,7 @@ export default function Intro() {
           </h1>
         </div>
         <div className="bg-teal-700/75">
-          <p className=" my-10 mx-10 text-white text-3xl">
+          <p className=" my-10 mx-10 py-8 px-10 text-white text-left text-3xl">
             Hispanic Hackers' goal is to showcase Hispanic innovator talent in
             the world of tech and share the growth of our expanding network of
             engineering and entrepreneurship excellence. We offer resources to
