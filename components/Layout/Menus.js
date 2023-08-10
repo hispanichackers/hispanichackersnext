@@ -3,7 +3,6 @@ import Link from 'next/link';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
 
-// font-bold
 export default function Nav({ theme, toggleTheme, textColor, font }) {
 // font-bold
 export default function Nav({ theme, toggleTheme, textColor, font }) {
