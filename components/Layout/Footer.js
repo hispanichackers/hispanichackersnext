@@ -26,7 +26,7 @@ const Section = styled.footer`
 
 export default function Footer(props) {
   return (
-    <Section className="p-3">
+    <Section className="p-7">
       <Menus {...props} textColor="#EEEEEE" font="normal"/>
       <p className="flex whitespace-pre-wrap">
         Made with coffee, cumbia, and cariño. With <FcLike /> in {new Date().getFullYear()}.
