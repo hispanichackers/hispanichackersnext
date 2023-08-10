@@ -29,10 +29,6 @@ export default function Footer(props) {
   return (
     <Section className="p-7">
       <Menus {...props} textColor="#EEEEEE" font="normal"/>
-      <p className="flex whitespace-pre-wrap p-7">
-        Made with coffee, cumbia, and cariño. With <FcLike /> in {new Date().getFullYear()}.
-    <Section className="p-3">
-      <Menus {...props} textColor="#EEEEEE" font="normal"/>
       <p className="flex whitespace-pre-wrap">
         Made with coffee, cumbia, and cariño. With <FcLike /> in {new Date().getFullYear()}.
       </p>
