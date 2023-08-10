@@ -18,7 +18,7 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
       </Link>
       <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
         <span>
-          Events 
+          Events
           {/* <FaExternalLinkAlt className="ml-1 inline"/> */}
         </span>
       </Link>
