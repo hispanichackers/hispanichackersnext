@@ -78,7 +78,7 @@ export default function Socials() {
   const { socialsHH } = globals();
   return (
     <Section>
-      <div className="flex p-7">
+      <div className="flex p-1">
         <a href={socialsHH.meetup.url} alt={socialsHH.meetup.alt} target='_blank'>
           <Meetup title={socialsHH.meetup.alt} />
         </a>
