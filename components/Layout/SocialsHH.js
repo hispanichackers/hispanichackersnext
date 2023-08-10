@@ -78,9 +78,6 @@ export default function Socials() {
   const { socialsHH } = globals();
   return (
     <Section>
-      <a href={socialsHH.discord.url} alt={socialsHH.discord.alt} target='_blank'>
-        <Discord title={socialsHH.discord.alt} />
-      </a>
       <a href={socialsHH.meetup.url} alt={socialsHH.meetup.alt} target='_blank'>
         <Meetup title={socialsHH.meetup.alt} />
       </a>
@@ -114,6 +111,9 @@ export default function Socials() {
         target='_blank'
       >
         <LinkedIn title={socialsHH.linkedin.alt} />
+      </a>
+      <a href={socialsHH.discord.url} alt={socialsHH.discord.alt} target='_blank'>
+        <Discord title={socialsHH.discord.alt} />
       </a>
     </Section>
   );
