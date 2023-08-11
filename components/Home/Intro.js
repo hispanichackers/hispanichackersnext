@@ -1,37 +1,55 @@
-import styled from 'styled-components';
-import Image from 'next/image';
-
-const Section = styled.section`
-  text-align: center;
-  margin: 0 auto;
-  img {
-    border-radius: 3px;
-    width: 100%;
-    object-fit: cover;
-  }
-  @media (min-width: 1024px) {
-    h4 {
-      width: 60%;
-      margin: 0 auto;
-    }
-  }
-`;
+import Link from "next/link";
 
 export default function Intro() {
   return (
-    <Section>
-      <Image
-        src='/static/images/meetup.jpg'
-        alt='Hispanic Hacker Meetup'
-        width={800}
-        height={533}
-      />
-      <h1>Welcome to Hispanic Hackers!</h1>
-      <h4>
-        Hispanic Hackers is an Austin-based community that empowers the Latinx
-        tech community. We host events that involve helping, hacking, and
-        getting hired. Feel free to browse our website to learn more!
-      </h4>
-    </Section>
+    <section>
+      <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center flex justify-center items-center grid grid-cols-1 sm:grid-cols-2">
+        <div className="bg-orange-500/75 h-full">
+          <h1 className=" font-sans text-4xl text-white text-left my-10 font-light sm:mt-28 mx-20 ">
+            Join our Comunidad<br></br>of
+            <span className=" font-serif  text-white text-7xl ">
+              {" "}
+              Developers, Engineers,<br></br> & Entrepreneurs
+            </span>
+          </h1>
+        </div>
+        <div className="bg-teal-700/75">
+          <p className=" my-10 mx-10 py-8 px-10 text-white text-left text-3xl">
+            Hispanic Hackers' goal is to showcase Hispanic innovator talent in
+            the world of tech and share the growth of our expanding network of
+            engineering and entrepreneurship excellence. We offer resources to
+            get you connected and host tech socials, presentations from Latino
+            industry leaders, and networking opportunities.
+          </p>
+          <div className="grid grid-cols-2 bg-yellow-600/50  text-center">
+            <Link
+              href="/about"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow-500 "
+            >
+              Join Us
+            </Link>
+            <Link
+              href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
+              target="_blank"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow-500"
+            >
+              Upcoming Events
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow-500"
+            >
+              Resources
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow-500"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
