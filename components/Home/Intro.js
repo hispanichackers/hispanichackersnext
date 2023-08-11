@@ -1,17 +1,4 @@
-import styled from "styled-components";
-import Image from "next/image";
-
-// const Section = styled.section`
-//   margin: 0 auto;
-
-//   @media (min-width: 1024px) {
-//     h4 {
-//       width: 60%;
-//       margin: 0 auto;
-//     }
-//   }
-
-// `;
+import Link from "next/link";
 
 export default function Intro() {
   return (
@@ -35,18 +22,31 @@ export default function Intro() {
             industry leaders, and networking opportunities.
           </p>
           <div className="grid grid-cols-2 bg-yellow-600/50  text-center">
-            <div className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold">
+            <Link
+              href="/about"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow-500 "
+            >
               Join Us
-            </div>
-            <div className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold text-2xl sm:text-3xl">
+            </Link>
+            <Link
+              href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
+              target="_blank"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow-500"
+            >
               Upcoming Events
-            </div>
-            <div className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold">
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow-500"
+            >
               Resources
-            </div>
-            <div className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold">
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-yellow-500/50 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow-500"
+            >
               Contact Us
-            </div>
+            </Link>
           </div>
         </div>
       </div>
