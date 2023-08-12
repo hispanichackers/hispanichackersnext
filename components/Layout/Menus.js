@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Nav({ theme, toggleTheme }) {
   return (
-    <nav class="flex flex-row gap-12 [&>a]:text-[#277e7e] font-bold [&>a:hover]:underline">
+    <nav class="flex flex-row gap-12 [&>a]:text-cyan font-bold [&>a:hover]:underline">
       <Link href='/'>
         <span>
           Home
