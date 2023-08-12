@@ -9,7 +9,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'cyan': '#267e7e',
+        'turquoise': '#41cecf',
+        'orange': '#ff6000',
+        'yellow': '#f5bb00',
+        'red': '#fb2626',
+      },
+      fontFamily: {
+        sans: ['Helvetica', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
