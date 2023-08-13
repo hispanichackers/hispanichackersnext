@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section>
       <section>
-        <h1 class="text-center">Events Calendar</h1>
+        <h1 className="text-center">Events Calendar</h1>
         <hr />
         <h4>
           Events are hosted at the Capital Factory or Zoom. Visit us at{' '}

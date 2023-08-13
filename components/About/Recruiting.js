@@ -43,35 +43,35 @@ const Recruit = styled.section`
 
 export default function Recruiting() {
   return (
-    <div class="text-center [2560px]:my-0 [2560px]:mx-auto">
+    <div className="text-center [2560px]:my-0 [2560px]:mx-auto">
       <h2>Join the Team or Get Involved</h2>
       <hr />
-      <section class="text-left">
-        <ul class="p-0">
+      <section className="text-left">
+        <ul className="p-0">
           <Image
             src='/static/images/zoom2.jpg'
             alt='Zoom meetup'
             width={846.5}
             height={481.5}
             objectFit='contain'
-            class="max-w-[100%] h-auto"
+            className="max-w-[100%] h-auto"
           />
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Become part of the executive team</li>
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Speakers always welcome for tech/culture topics</li>
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Improve our events and organization</li>
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Bring your unique skills</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Become part of the executive team</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Speakers always welcome for tech/culture topics</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Improve our events and organization</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Bring your unique skills</li>
         </ul>
-        <ul class="p-0">
+        <ul className="p-0">
           <Image
             src='/static/images/zoom.png'
             alt='Zoom meetup'
             width={846.5}
             height={481.5}
-            class="max-w-[100%] h-auto"
+            className="max-w-[100%] h-auto"
           />
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Gain recognition for future job role</li>
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Great chance to develop leadership skills</li>
-          <li class="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Use coding skills for building the organization</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Gain recognition for future job role</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Great chance to develop leadership skills</li>
+          <li className="w-[90%] my-0 mx-auto [768px]:w-[50%] [1024px]:w-[80%]">Use coding skills for building the organization</li>
         </ul>
       </section>
       <ContactButton />
