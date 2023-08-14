@@ -3,23 +3,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { FaLinkedin } from 'react-icons/fa';
 
-const Aside = styled.aside`
-  text-align: left;
-  max-width: 65ch;
-  p {
-    font-size: 1.8rem;
-    line-height: 1.6;
-  }
-`;
-const ProfileLinks = styled.div`
-  margin: 0 auto;
-  text-align: left;
-`;
-const Image1 = styled(Image)`
-  margin: 0 auto;
-  border-radius: 50%;
-  display: block;
-`;
 const LinkedIn = styled(FaLinkedin)`
   color: #0073b1;
   :hover {
@@ -29,15 +12,15 @@ const LinkedIn = styled(FaLinkedin)`
 
 export default function Profile(props) {
   return (
-    <Aside>
-      <Image1 src={props.image} alt='Eddy' width={200} height={200} />
+    <div className="text-left max-w-[65ch] ">
+      <Image className="my-0 mx-auto rounded-[50%] block" src={props.image} alt='Eddy' width={200} height={200} />
       <h2>{props.name}</h2>
-      <ProfileLinks>
+      <div className="my-0 mx-auto text-left">
         <a href={props.linkedin} target='_blank'>
-          <LinkedIn size={30} />
+          <FaLinkedin className="text-[#0073b1] hover:scale-125" size={30} />
         </a>
-      </ProfileLinks>
-      <p>{props.bio}</p>
-    </Aside>
+      </div>
+      <p className="text-[1.8rem] leading-[1.6]">{props.bio}</p>
+    </div>
   );
 }

@@ -26,26 +26,26 @@ export default function Intro() {
           <div className="grid grid-cols-2 bg-yellow-600/50  text-center">
             <Link
               href="/about"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow "
+              className="bg-yellow/75 p-14 border-4 border-yellow h-44 text-white font-bold hover:bg-yellow "
             >
               Join Us
             </Link>
             <Link
               href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
               target="_blank"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow"
+              className="bg-yellow/75 p-14 border-4 border-yellow h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow"
             >
               Upcoming Events
             </Link>
             <Link
               href="/contact"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow"
+              className="bg-yellow/75 p-14 border-4 border-yellow h-44 text-white font-bold hover:bg-yellow"
             >
               Resources
             </Link>
             <Link
               href="/contact"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow"
+              className="bg-yellow/75 p-14 border-4 border-yellow h-44 text-white font-bold hover:bg-yellow"
             >
               Contact Us
             </Link>
