@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import CapitalFactory from './CapitalFactory';
+import styled from "styled-components";
+import CapitalFactory from "./CapitalFactory";
 
 const Section = styled.section`
   text-align: center;
@@ -17,9 +17,10 @@ const Section = styled.section`
 export default function Links() {
   return (
     <Section>
-      <h2>Sponsors</h2>
-      <hr />
-      <CapitalFactory />
+      <div className="py-8 text-center">
+        <h1 className="font-bold">Our Sponsors & Partners</h1>
+        <CapitalFactory />
+      </div>
     </Section>
   );
 }
