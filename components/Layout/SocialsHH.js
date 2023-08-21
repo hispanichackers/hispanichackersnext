@@ -117,43 +117,7 @@ export default function Socials() {
           <Discord title={socialsHH.discord.alt} />
         </a>
       </div>
-      <a href={socialsHH.meetup.url} alt={socialsHH.meetup.alt} target='_blank'>
-        <Meetup title={socialsHH.meetup.alt} />
-      </a>
-      <a href={socialsHH.slack.url} alt={socialsHH.slack.alt} target='_blank'>
-        <Slack title={socialsHH.slack.alt} />
-      </a>
-      <a
-        href={socialsHH.youtube.url}
-        alt={socialsHH.youtube.alt}
-        target='_blank'
-      >
-        <Youtube title={socialsHH.youtube.alt} />
-      </a>
-      <a
-        href={socialsHH.instagram.url}
-        alt={socialsHH.instagram.alt}
-        target='_blank'
-      >
-        <Instagram title={socialsHH.instagram.alt} />
-      </a>
-      <a
-        href={socialsHH.facebook.url}
-        alt={socialsHH.facebook.alt}
-        target='_blank'
-      >
-        <Facebook title={socialsHH.facebook.alt} />
-      </a>
-      <a
-        href={socialsHH.linkedin.url}
-        alt={socialsHH.linkedin.alt}
-        target='_blank'
-      >
-        <LinkedIn title={socialsHH.linkedin.alt} />
-      </a>
-      <a href={socialsHH.discord.url} alt={socialsHH.discord.alt} target='_blank'>
-        <Discord title={socialsHH.discord.alt} />
-      </a>
+     
     </Section>
   );
 }
