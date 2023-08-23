@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Intro() {
   return (
     <section>
-      <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center flex justify-center items-center grid grid-cols-1 sm:grid-cols-2">
+      <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center flex justify-center items-center grid grid-cols-1 md:grid-cols-2">
         <div className="bg-orange/75 h-full">
           <h1 className=" font-sans text-4xl text-white text-left my-10 font-light sm:mt-28 mx-20 ">
             Join our Comunidad<br></br>of
