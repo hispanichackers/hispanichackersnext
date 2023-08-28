@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Header from './Header';
-import Footer from './Footer';
+import styled from "styled-components";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Section = styled.section`
   width: 90%;
@@ -9,10 +9,12 @@ const Section = styled.section`
 
 export default function Layout(props) {
   return (
-    <main>
+    <>
       <Header {...props} />
-      <Section>{props.children}</Section>
+      <main>
+        <Section>{props.children}</Section>
+      </main>
       <Footer {...props} />
-    </main>
+    </>
   );
 }

@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
-// import { FaExternalLinkAlt } from 'react-icons/fa';
+
 
 export default function Nav({ theme, toggleTheme, textColor, font }) {
 // font-bold
 
+
+
+export default function Nav({ theme, toggleTheme, textColor, font }) {
   return (
-    
-    <nav class="flex flex-row gap-12 [&>a]:text-[#277e7e] font-bold [&>a:hover]:underline">
+    <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}>
+
       <Link href='/'>
         <span>
           Home
@@ -19,10 +22,11 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
           Join Us
         </span>
       </Link>
-  
+
       <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
         <span>
-          Events 
+          Events
+
           {/* <FaExternalLinkAlt className="ml-1 inline"/> */}
         </span>
       </Link>
@@ -32,16 +36,16 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
         </span>
       </Link>
       {/* <Link href='/sponsors'>
-      {/* <Link href='/sponsors'>
+
+
         <span>
           Sponsors
         </span>
       </Link> */}
-      
+
       <Link href='/contact'>
         <span>
           Contact Us
-      
         </span>
       </Link>
     </nav>
