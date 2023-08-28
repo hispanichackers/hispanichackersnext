@@ -117,6 +117,7 @@ export default function Socials() {
           <Discord title={socialsHH.discord.alt} />
         </a>
       </div>
+
     </Section>
   );
 }

@@ -4,8 +4,14 @@ import Link from 'next/link';
 
 
 export default function Nav({ theme, toggleTheme, textColor, font }) {
+// font-bold
+
+
+
+export default function Nav({ theme, toggleTheme, textColor, font }) {
   return (
     <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}>
+
       <Link href='/'>
         <span>
           Home
@@ -16,9 +22,11 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
           Join Us
         </span>
       </Link>
+
       <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
         <span>
           Events
+
           {/* <FaExternalLinkAlt className="ml-1 inline"/> */}
         </span>
       </Link>
@@ -28,15 +36,19 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
         </span>
       </Link>
       {/* <Link href='/sponsors'>
+
+
         <span>
           Sponsors
         </span>
       </Link> */}
+
       <Link href='/contact'>
         <span>
           Contact Us
         </span>
       </Link>
     </nav>
+
   );
 }
