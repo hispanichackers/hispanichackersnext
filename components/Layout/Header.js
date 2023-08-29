@@ -4,8 +4,11 @@ import Menus from './Menus';
 import Link from 'next/link';
 
 export default function Header(props) {
+
   return (
-    <header className="bg-white flex flex-row border-b-2 border-cyan py-4">
+    <header
+      className="bg-white flex flex-row border-b-2 border-cyan py-4 w-full fixed top-0 z-50"
+    >
       <section className="container mx-auto flex flex-col md:flex-row items-center md:gap-24">
         <Link href={"/"}>
           <Image
