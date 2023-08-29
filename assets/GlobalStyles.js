@@ -50,10 +50,6 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 1.8rem;
     line-height: 1.6;
-    padding-bottom: 24rem;
-    @media (min-width: 768px) {
-      padding-bottom: 12rem;
-    }
   }
   h1 {
     @media (min-width: 320px) {
@@ -100,6 +96,9 @@ export const GlobalStyles = createGlobalStyle`
       color: white;
       background-color: ${({ theme }) => theme.linkUnderline};
       border: 2px solid ${({ theme }) => theme.fontColor};
+      a {
+        color: white;
+      }
     }
   }
 `;

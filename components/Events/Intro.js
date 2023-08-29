@@ -1,16 +1,10 @@
 import styled from "styled-components";
 
-const Article = styled.section`
-  h1 {
-    text-align: center;
-  }
-`;
-
 export default function Intro() {
   return (
     <section>
-      <Article>
-        <h1>Events Calendar</h1>
+      <section>
+        <h1 className="text-center">Events Calendar</h1>
         <hr />
         <h4>
           Events are hosted at the Capital Factory or Zoom. Visit us at{' '}
@@ -31,7 +25,7 @@ export default function Intro() {
           </a>
           .
         </h4>
-      </Article>
+      </section>
     </section>
   );
 }
