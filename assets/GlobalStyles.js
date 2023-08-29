@@ -96,6 +96,9 @@ export const GlobalStyles = createGlobalStyle`
       color: white;
       background-color: ${({ theme }) => theme.linkUnderline};
       border: 2px solid ${({ theme }) => theme.fontColor};
+      a {
+        color: white;
+      }
     }
   }
 `;
