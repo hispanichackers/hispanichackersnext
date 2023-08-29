@@ -33,7 +33,7 @@ export default function Mission() {
         <p className="text-center text-2xl mt-5  sm:text-left sm:ml-16 sm:text-3xl 2xl:text-5xl">
           Hispanic Hackers is an inclusive <br></br> community software
           developers,<br></br> entrepreneurs, & ambitious innovators of<br></br>
-          Latino/Hispanic ethincity.<br></br>
+          Latino/Hispanic ethnicity.<br></br>
           <Link
           href="/contact"
           className="inline-flex w-max text-3xl mt-5 ml-24 font-medium mr-44 text-white hover:underline hover:underline-offset-1 sm:ml-10 md:ml-24 sm:text-3xl 2xl:text-5xl "
