@@ -18,7 +18,7 @@ export default function Links() {
   return (
     <Section>
       <div className="py-8 text-center">
-        <h1 className="font-bold">Our Sponsors & Partners</h1>
+        <h1 className="font-bebas">Our Sponsors & Partners</h1>
         <CapitalFactory />
       </div>
     </Section>

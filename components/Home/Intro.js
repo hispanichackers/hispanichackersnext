@@ -8,7 +8,7 @@ export default function Intro() {
         <div className="bg-orange/75 h-full">
           <h1 className=" font-sans text-4xl text-white text-left my-10 font-light sm:mt-28 mx-20 ">
             Join our Comunidad<br></br>of
-            <span className=" font-serif  text-white text-7xl ">
+            <span className="font-bebas  text-white text-7xl ">
               {" "}
               Developers, Engineers,<br></br> & Entrepreneurs
             </span>

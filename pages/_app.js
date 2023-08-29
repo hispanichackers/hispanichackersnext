@@ -25,6 +25,7 @@ export default function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme == 'dark' ? darkTheme : lightTheme}>
       <Head>
         <title>Hispanic Hackers</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"></link>
       </Head>
       <Component {...pageProps} {...globals} />
       <GlobalStyles />
