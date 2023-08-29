@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function Intro() {
   return (
     <section>
-
       <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center flex justify-center items-center grid grid-cols-1 sm:grid-cols-2">
         <div className="bg-orange/75 h-full">
           <h1 className=" font-sans text-4xl text-white text-left my-10 font-light sm:mt-28 mx-20 ">
@@ -24,37 +23,29 @@ export default function Intro() {
               industry leaders, and networking opportunities.
             </p>
           </div>
-          <div className="grid grid-cols-2 bg-yellow-600/50  text-center">
+          <div className="grid grid-cols-2 text-center">
             <Link
               href="/about"
-
-      className="bg-yellow/75 p-14 border-4 border-yellow h-44 text-white font-bold hover:bg-yellow "
-
+              className="bg-yellow/75 p-14 border-l-8 border-t-8 border-r-4 border-b-4 border-yellow h-44 text-white font-bold hover:bg-yellow "
             >
               Join Us
             </Link>
             <Link
               href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
               target="_blank"
-
-
-              className="bg-yellow/75 p-14 border-4 border-yellow h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow"
-
+              className="bg-yellow/75 p-14 border-r-8 border-t-8  border-l-4 border-b-4 border-yellow h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow"
             >
               Upcoming Events
             </Link>
             <Link
               href="/contact"
-
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow"
-
+              className="bg-yellow/75 p-14 border-l-8 border-b-8 border-r-4 border-t-4 border-yellow h-44 text-white font-bold hover:bg-yellow"
             >
               Resources
             </Link>
             <Link
               href="/contact"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow"
-
+              className="bg-yellow/75 p-14 border-l-4 border-t-4 border-r-8 border-b-8 border-yellow h-44 text-white font-bold hover:bg-yellow"
             >
               Contact Us
             </Link>
