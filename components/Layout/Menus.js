@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
-// import { FaExternalLinkAlt } from 'react-icons/fa';
+
 
 export default function Nav({ theme, toggleTheme, textColor, font }) {
 // font-bold
-export default function Nav({ theme, toggleTheme, textColor, font }) {
+
   return (
     <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}>
-    <nav class="flex flex-row gap-12 [&>a]:text-[#277e7e] font-bold [&>a:hover]:underline">
+    
       <Link href='/'>
         <span>
           Home
@@ -44,11 +44,11 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
           Sponsors
         </span>
       </Link> */}
-      </Link> */}
+      
       <Link href='/contact'>
         <span>
           Contact Us
-          Contact Us
+          
         </span>
       </Link>
     </nav>
