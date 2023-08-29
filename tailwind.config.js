@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         sans: ['Helvetica', 'sans-serif'],
         serif: ['Georgia', 'serif'],
+        bebas: ['Bebas Neue']
       },
     },
   },

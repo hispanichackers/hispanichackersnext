@@ -24,7 +24,7 @@ export default function Mission() {
       <div className="text-center mt-10 mb-10 h-max sm:mt-10 lg:ml-18 lg:mt-20 2xl:ml-60">
         <h2 className="text-6xl text-center font-light sm:text-left sm:mt-24 sm:text-4xl 2xl:text-6xl ">
           Austin-born, <br></br>
-          <span className="text-6xl font-semibold w-full 2xl:text-8xl">LATINO RAISED.<br></br></span>
+          <span className="text-6xl font-bebas w-full 2xl:text-8xl">LATINO RAISED.<br></br></span>
         
         <span className="text-3xl mt-2 text-center font-serif sm:text-3xl sm:ml-16 md:text-4xl 2xl:text-6xl ">
           (Hecho en Austin por Latinos)
@@ -60,7 +60,7 @@ export default function Mission() {
       <div className=" h-96 sm:ml-24 sm:mt-10 md:order-last md:ml-96 md:mr-80 md:col-span-2 lg:col-span-1 lg:ml-0 2xl:ml-60">
         <h2 className="mt-10 text-4xl text-center font-light sm:text-left 2xl:text-6xl">
           Participate from <br></br>
-          <span className="text-5xl text-center font-semibold sm:text-left 2xl:text-7xl">
+          <span className="text-5xl text-center font-bebas sm:text-left 2xl:text-7xl">
             AROUND THE WORLD.
           </span>
         </h2>
