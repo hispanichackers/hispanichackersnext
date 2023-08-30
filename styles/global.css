@@ -2,18 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  @apply h-[150px] md:h-[122px] mt-[150px] md:mt-[122px] mb-0 mx-0;
+}
+
 h1 {
-    @apply font-bebas text-7xl;
+  @apply font-bebas text-7xl;
 }
 
 h2 {
-    @apply text-4xl;
+  @apply text-4xl;
 }
 
 h3 {
-    @apply text-3xl;
+  @apply text-3xl;
 }
 
 .wrapper {
-    @apply px-4 md:px-0 container mx-auto;
+  @apply px-4 md:px-0 container mx-auto;
 }
