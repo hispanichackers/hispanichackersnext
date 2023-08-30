@@ -34,14 +34,6 @@ export const lightTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-  html {
-    --maxWidth: 1000px;
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
   body {
     background: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.fontColor};

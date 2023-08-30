@@ -5,3 +5,7 @@
 h1 {
     @apply font-bebas text-7xl;
 }
+
+.wrapper {
+    @apply px-4 md:px-0 container mx-auto;
+}
