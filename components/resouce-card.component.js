@@ -6,7 +6,7 @@ export default function ResourceCard({ title, copy, linkCopy, linkUrl, image, im
   return (
     <>
       <div className="border-2 border-dotted border-[#9747FF] p-4 rounded-[5px] max-w-[840px] mx-auto">
-        <div className="bg-[#F4EBDC] py-12 px-24 rounded-[25px] text-black">
+        <div className="bg-[#F4EBDC] p-8 md:py-12 md:px-24 rounded-[25px] text-black">
           <h3 className="font-bold">{ title }</h3>
           <article className="grid md:grid-cols-[1fr_3fr] gap-8 mt-8">
             <Image
@@ -22,7 +22,7 @@ export default function ResourceCard({ title, copy, linkCopy, linkUrl, image, im
               </p>
               <a
                 href={ linkUrl }
-                className="flex flex-row text-black items-center gap-4"
+                className="flex flex-row text-black items-center gap-2 md:gap-4"
               >
                 { linkCopy }{" "}
                 <svg

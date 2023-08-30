@@ -6,6 +6,14 @@ h1 {
     @apply font-bebas text-7xl;
 }
 
+h2 {
+    @apply text-4xl;
+}
+
+h3 {
+    @apply text-3xl;
+}
+
 .wrapper {
     @apply px-4 md:px-0 container mx-auto;
 }

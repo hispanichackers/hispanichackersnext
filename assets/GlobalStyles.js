@@ -40,18 +40,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 1.8rem;
     line-height: 1.6;
-  }
-  h2 {
-    @media (min-width: 320px) {
-      font-size: 2.4rem;
-    }
-  }
-  h3 {
-    @media (min-width: 320px) {
-      font-size: 2.2rem;
-    }
   }
   h5 {
     @media (min-width: 320px) {
