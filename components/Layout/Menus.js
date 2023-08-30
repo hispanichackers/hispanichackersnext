@@ -24,7 +24,7 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
           {/* <FaExternalLinkAlt className="ml-1 inline"/> */}
         </span>
       </Link>
-      <Link href='/about'>
+      <Link href='/resources'>
         <span>
           Resources
         </span>

@@ -51,11 +51,6 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.8rem;
     line-height: 1.6;
   }
-  h1 {
-    @media (min-width: 320px) {
-      font-size: 2.6rem;
-    }
-  }
   h2 {
     @media (min-width: 320px) {
       font-size: 2.4rem;
@@ -75,13 +70,6 @@ export const GlobalStyles = createGlobalStyle`
     @media (min-width: 320px) {
       font-size: 1.8rem;
     }
-  }
-  p, li {
-    font-size: 1.4rem;
-  }
-  a {
-    color: ${({ theme }) => theme.fontColor};
-    text-decoration: none;
   }
   button {
     background: transparent;

@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+    @apply font-bebas text-7xl;
+}
