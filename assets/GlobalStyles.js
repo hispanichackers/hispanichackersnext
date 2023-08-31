@@ -34,37 +34,13 @@ export const lightTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-  html {
-    --maxWidth: 1000px;
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
   body {
     background: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.fontColor};
     font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 1.8rem;
     line-height: 1.6;
-  }
-  h1 {
-    @media (min-width: 320px) {
-      font-size: 2.6rem;
-    }
-  }
-  h2 {
-    @media (min-width: 320px) {
-      font-size: 2.4rem;
-    }
-  }
-  h3 {
-    @media (min-width: 320px) {
-      font-size: 2.2rem;
-    }
   }
   h5 {
     @media (min-width: 320px) {
@@ -75,13 +51,6 @@ export const GlobalStyles = createGlobalStyle`
     @media (min-width: 320px) {
       font-size: 1.8rem;
     }
-  }
-  p, li {
-    font-size: 1.4rem;
-  }
-  a {
-    color: ${({ theme }) => theme.fontColor};
-    text-decoration: none;
   }
   button {
     background: transparent;
