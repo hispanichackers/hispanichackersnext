@@ -1,33 +1,30 @@
-import styled from 'styled-components';
 import Link from 'next/link';
+import styled from 'styled-components';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Nav({ theme, toggleTheme, textColor, font }) {
   return (
-    <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}>
-
-      <Link href='/'>
-        <span>
-          Home
-        </span>
+    <nav
+      className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}
+    >
+      <Link href="/">
+        <span>Home</span>
       </Link>
-      <Link href='/'>
-        <span>
-          Join Us
-        </span>
+      <Link href="/joinus">
+        <span>Join Us</span>
       </Link>
 
-      <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
+      <Link
+        href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
+        target="_blank"
+      >
         <span>
           Events
-
           {/* <FaExternalLinkAlt className="ml-1 inline"/> */}
         </span>
       </Link>
-      <Link href='/resources'>
-        <span>
-          Resources
-        </span>
+      <Link href="/resources">
+        <span>Resources</span>
       </Link>
       {/* <Link href='/sponsors'>
 
@@ -37,12 +34,9 @@ export default function Nav({ theme, toggleTheme, textColor, font }) {
         </span>
       </Link> */}
 
-      <Link href='/contact'>
-        <span>
-          Contact Us
-        </span>
+      <Link href="/contact">
+        <span>Contact Us</span>
       </Link>
     </nav>
-
   );
 }
