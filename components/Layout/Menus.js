@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export default function Nav({ textColor, font }) {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <nav
       className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}
     >
@@ -12,6 +13,9 @@ export default function Nav({ textColor, font }) {
         <span>Home</span>
 =======
     <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline [&>a]:text-cyan`}>
+=======
+    <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline [&>a]:text-cyan px-4 md:px-0`}>
+>>>>>>> bf4b511 (Adds padding for mobile)
 
       <Link href='/'>
         <span>
