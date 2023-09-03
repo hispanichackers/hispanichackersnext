@@ -11,11 +11,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+<<<<<<< HEAD
         cyan: "#267e7e",
         turquoise: "#41cecf",
         orange: "#ff6000",
         yellow: "#f5bb00",
         red: "#fb2626",
+=======
+        'cyan': '#267e7e',
+        'turquoise': '#41cecf',
+        'orange': '#ff6000',
+        'yellow': '#f5bb00',
+        'red': '#fb2626',
+        'black': '#1D1F21',
+>>>>>>> afc2ed6 (Adjusts to layout in footer)
       },
       fontFamily: {
         sans: ["Helvetica", "sans-serif"],

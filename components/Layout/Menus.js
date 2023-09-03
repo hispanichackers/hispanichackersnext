@@ -6,6 +6,7 @@ export default function Nav({ textColor, font }) {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <nav
       className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}
     >
@@ -17,6 +18,9 @@ export default function Nav({ textColor, font }) {
     <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline [&>a]:text-cyan px-4 md:px-0`}>
 >>>>>>> bf4b511 (Adds padding for mobile)
 
+=======
+    <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline px-4 md:px-0`}>
+>>>>>>> afc2ed6 (Adjusts to layout in footer)
       <Link href='/'>
         <span>
           Home
