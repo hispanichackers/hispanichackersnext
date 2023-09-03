@@ -4,11 +4,20 @@ import styled from 'styled-components';
 
 export default function Nav({ textColor, font }) {
   return (
+<<<<<<< HEAD
     <nav
       className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}
     >
       <Link href="/">
         <span>Home</span>
+=======
+    <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline [&>a]:text-cyan`}>
+
+      <Link href='/'>
+        <span>
+          Home
+        </span>
+>>>>>>> 072fbac (Updates nav style in menus.js)
       </Link>
       <Link href="/joinus">
         <span>Join Us</span>
