@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+
 import {
   FaHome,
   FaMeetup,
@@ -10,21 +10,10 @@ import {
 } from 'react-icons/fa';
 import globals from '../../assets/GlobalData';
 
-const Socials = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  a {
-    border-bottom: 2px solid ${({ theme }) => theme.backgroundColor};
-    :hover {
-      border-bottom: 2px solid ${({ theme }) => theme.linkUnderline};
-    }
-  }
-`;
 
 export default function CapitalFactorySocials() {
   return (
-    <Socials>
+    <>
       <a
         href={globals().socialsCF.home.url}
         alt={globals().socialsCF.home.alt}
@@ -74,6 +63,6 @@ export default function CapitalFactorySocials() {
       >
         <FaYoutubeSquare size={40} />
       </a>
-    </Socials>
+    </>
   );
 }

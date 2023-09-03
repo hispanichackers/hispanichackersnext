@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+
 import Image from 'next/image';
 import ContactButton from '../lib/ContactButton';
 

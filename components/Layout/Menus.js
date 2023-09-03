@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
 
-export default function Nav({ theme, toggleTheme, textColor, font }) {
+export default function Nav({ textColor, font }) {
   return (
     <nav
       className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}
