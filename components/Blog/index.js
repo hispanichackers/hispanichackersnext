@@ -5,7 +5,7 @@ import Date from '../../assets/date';
 
 export default function Blog({ allPostsData }) {
   return (
-    < id='blog'>
+    <div id='blog'>
       <h2>Blog</h2>
       <hr />
       <ul>
@@ -26,6 +26,6 @@ export default function Blog({ allPostsData }) {
         width={800}
         height={533}
       />
-    </>
+    </div>
   );
 }
