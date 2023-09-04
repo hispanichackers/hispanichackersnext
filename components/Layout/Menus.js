@@ -8,6 +8,7 @@ export default function Nav({ fontColor, font }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <nav
       className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline`}
     >
@@ -25,6 +26,9 @@ export default function Nav({ fontColor, font }) {
 =======
     <nav className={`flex flex-row gap-12 ${fontColor} font-${font} [&>a:hover]:underline px-4 md:px-0`}>
 >>>>>>> 8d831a3 (Updates arbitrary color handler in menus)
+=======
+    <nav className={`flex flex-row gap-8 ${fontColor} font-${font} [&>a:hover]:underline px-4 md:px-0`}>
+>>>>>>> cee4597 (Fixes footer social icons, adjusts flexbox)
       <Link href='/'>
         <span>
           Home
@@ -34,6 +38,7 @@ export default function Nav({ fontColor, font }) {
       <Link href="/joinus">
         <span>Join Us</span>
       </Link>
+<<<<<<< HEAD
 
       <Link
         href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
@@ -42,11 +47,17 @@ export default function Nav({ fontColor, font }) {
         <span>
           Events
           {/* <FaExternalLinkAlt className="ml-1 inline"/> */}
+=======
+      <Link href='https://www.meetup.com/austin-hispanic-hackers-meetup/' target="_blank">
+        <span>
+          Events
+>>>>>>> cee4597 (Fixes footer social icons, adjusts flexbox)
         </span>
       </Link>
       <Link href="/resources">
         <span>Resources</span>
       </Link>
+<<<<<<< HEAD
       {/* <Link href='/sponsors'>
 
 
@@ -57,6 +68,12 @@ export default function Nav({ fontColor, font }) {
 
       <Link href="/contact">
         <span>Contact Us</span>
+=======
+      <Link href='/contact'>
+        <span>
+          Contact Us
+        </span>
+>>>>>>> cee4597 (Fixes footer social icons, adjusts flexbox)
       </Link>
     </nav>
   );
