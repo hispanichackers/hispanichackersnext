@@ -1,7 +1,6 @@
 import {
   FaMeetup,
   FaYoutube,
-  FaSlackHash,
   FaInstagram,
   FaFacebookSquare,
   FaLinkedin,
