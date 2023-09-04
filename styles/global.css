@@ -28,3 +28,9 @@ h3 {
 .wrapper {
   @apply container mx-auto px-4 md:px-0;
 }
+
+.instagram-icon {
+  color: white;
+  background: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+}
