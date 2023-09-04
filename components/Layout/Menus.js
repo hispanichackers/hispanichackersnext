@@ -2,8 +2,9 @@ import Link from 'next/link';
 import styled from 'styled-components';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
 
-export default function Nav({ textColor, font }) {
+export default function Nav({ fontColor, font }) {
   return (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,9 @@ export default function Nav({ textColor, font }) {
 =======
     <nav className={`flex flex-row gap-12 [&>a]:text-[${textColor}] font-${font} [&>a:hover]:underline px-4 md:px-0`}>
 >>>>>>> afc2ed6 (Adjusts to layout in footer)
+=======
+    <nav className={`flex flex-row gap-12 ${fontColor} font-${font} [&>a:hover]:underline px-4 md:px-0`}>
+>>>>>>> 8d831a3 (Updates arbitrary color handler in menus)
       <Link href='/'>
         <span>
           Home

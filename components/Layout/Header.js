@@ -17,7 +17,7 @@ export default function Header(props) {
             height={100}
           />
         </Link>
-        <Menus {...props} textColor="#267e7e" font="bold"/>
+        <Menus {...props} fontColor="text-cyan" font="bold"/>
       </section>
     </header>
   );
