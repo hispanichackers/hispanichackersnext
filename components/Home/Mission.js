@@ -1,14 +1,10 @@
 import Link from "next/link";
-import styled from 'styled-components';
 import {
   FaMeetup,
   FaDiscord,
- 
+
 } from 'react-icons/fa';
 
-const Meetup = styled(FaMeetup)`
-  color: #e61b3e;
-`;
 
 export default function Mission() {
   return (
@@ -25,7 +21,7 @@ export default function Mission() {
         <h2 className="text-6xl text-center font-light sm:text-left sm:mt-24 sm:text-4xl xl:text-6xl ">
           Austin-born, <br></br>
           <span className="text-6xl font-bebas w-full xl:text-8xl">LATINO-RAISED.<br></br></span>
-        
+
         <span className="text-3xl mt-2 text-center font-serif sm:text-3xl sm:ml-16 md:text-4xl xl:text-6xl ">
           (Hecho en Austin por Latinos)
         </span>
@@ -38,8 +34,8 @@ export default function Mission() {
           href="/contact"
           className="inline-flex w-max text-3xl mt-5 ml-24 font-medium mr-44 text-white hover:underline hover:underline-offset-1 sm:ml-10 md:ml-24 sm:text-3xl xl:text-5xl "
           passHref
-        > Join our community 
-       
+        > Join our community
+
          <img
           className="ml-5 h-6 mt-2  md:h-6 md:mt-3 xl:h-9 xl:mt-3"
           src="/static/images/Arrow1.png"
@@ -47,8 +43,8 @@ export default function Mission() {
         />
         </Link>
         </p>
-        
-        
+
+
       </div>
       <div className="h-full inline-flex md:h-96 sm:order-last md:order-2 2xl:ml-60">
         <img
@@ -66,17 +62,16 @@ export default function Mission() {
         </h2>
         <p className="text-md text-center mt-3 ml-2 md:w-max sm:text-left sm:text-3xl xl:text-5xl">
           Join Hispanic Hackers on Google Meet,<br></br> Meetup, Discord and beyond.<br></br>
-        
+
 
         <Link
           href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
           target="_blank"
-          button
           className="inline-flex p-1 text-3xl text-white    hover:underline hover:underline-offset-1 w-max  sm:ml-5 lg:text-5xl xl:text-7xl"
           passHref
         >
           <FaDiscord className="mr-1 mt-1" />
-          <Meetup className="mr-1 mt-1"/> 
+          <FaMeetup className="mr-1 mt-1"/>
           Find an event
           <img
           className=" ml-5 h-6 mt-2  md:h-6 md:mt-3 xl:h-9 xl:mt-6"

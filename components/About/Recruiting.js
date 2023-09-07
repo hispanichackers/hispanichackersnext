@@ -1,45 +1,6 @@
-import styled from 'styled-components';
+
 import Image from 'next/image';
 import ContactButton from '../lib/ContactButton';
-
-const Section = styled.h1`
-  text-align: center;
-  a {
-    text-decoration: none;
-  }
-  @media (min-width: 2560px) {
-    margin: 0 auto;
-  }
-`;
-const Recruit = styled.section`
-  text-align: left;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  ul {
-    padding: 0;
-  }
-  li {
-    width: 90%;
-    margin: 0 auto;
-  }
-  @media (min-width: 768px) {
-    li {
-      width: 50%;
-    }
-  }
-  @media (min-width: 1024px) {
-    display: flex;
-    li {
-      width: 80%;
-    }
-    * {
-      flex: 1 1 50%;
-      margin: 1rem;
-    }
-  }
-`;
 
 export default function Recruiting() {
   return (

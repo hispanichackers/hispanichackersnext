@@ -1,14 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import Image from 'next/image';
 import { FaLinkedin } from 'react-icons/fa';
 
-const LinkedIn = styled(FaLinkedin)`
-  color: #0073b1;
-  :hover {
-    transform: scale(1.2);
-  }
-`;
 
 export default function Profile(props) {
   return (

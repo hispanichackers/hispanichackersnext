@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Image from 'next/image';
 import Menus from './Menus';
 import Link from 'next/link';
@@ -18,7 +17,7 @@ export default function Header(props) {
             height={100}
           />
         </Link>
-        <Menus {...props} textColor="#277e7e" font="bold"/>
+        <Menus {...props} fontColor="text-cyan" font="bold"/>
       </section>
     </header>
   );
