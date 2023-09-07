@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -9,7 +10,7 @@ html {
 :target:before {
   content: "";
   display: block;
-  @apply h-[150px] md:h-[122px] mt-[150px] md:mt-[122px] mb-0 mx-0;
+  @apply mx-0 mb-0 mt-[150px] h-[150px] md:mt-[122px] md:h-[122px];
 }
 
 h1 {
@@ -25,5 +26,5 @@ h3 {
 }
 
 .wrapper {
-  @apply px-4 md:px-0 container mx-auto;
+  @apply container mx-auto px-4 md:px-0;
 }

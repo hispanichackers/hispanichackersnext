@@ -11,20 +11,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'cyan': '#267e7e',
-        'turquoise': '#41cecf',
-        'orange': '#ff6000',
-        'yellow': '#f5bb00',
-        'red': '#fb2626',
+        cyan: "#267e7e",
+        turquoise: "#41cecf",
+        orange: "#ff6000",
+        yellow: "#f5bb00",
+        red: "#fb2626",
       },
       fontFamily: {
-        sans: ['Helvetica', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
-        bebas: ['Bebas Neue']
+        sans: ["Helvetica", "sans-serif"],
+        serif: ["Georgia", "serif"],
+        bebas: ["Bebas Neue"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
