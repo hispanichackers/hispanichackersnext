@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import styled from 'styled-components';
 // import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Nav({ fontColor, font }) {
   return (
-
     <nav className={`flex flex-row gap-8 ${fontColor} font-${font} [&>a:hover]:underline px-4 md:px-0`}>
       <Link href='/'>
         <span>
