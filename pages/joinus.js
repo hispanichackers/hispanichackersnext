@@ -7,7 +7,7 @@ import facebookIcon from "../public/static/images/facebook-icon.svg";
 import instagramIcon from "../public/static/images/instagram-icon.svg";
 import linkedinIcon from "../public/static/images/linkedin-icon.svg";
 
-export default function joinus(props) {
+export default function joinus() {
   const { socialsHH } = globals();
   const [email, setEmail] = useState("");
 
@@ -17,42 +17,47 @@ export default function joinus(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email) console.log("submited");
+    if (email) {
+      alert("submited");
+    }
   };
 
   return (
-    <Layout {...props}>
-      <div className="font-inter flex flex-col items-center">
+    <Layout>
+      <div className="flex flex-col items-center font-inter">
         <header className="grid max-w-[90rem] grid-rows-[minmax(0,_600px)_minmax(0,_1fr)]">
-          <Image
-            className="col-[1/2] row-[1/3]"
-            src="/static/images/joinus_meeting.png"
-            alt=""
-            width={1440}
-            height={959}
-          />
+          <div className="col-[1/2] row-[1/3] overflow-hidden">
+            <Image
+              className="min-w-[73rem] pr-64 sm:p-0"
+              src="/static/images/joinus_meeting.png"
+              alt="event meeting"
+              width={1440}
+              height={959}
+            />
+          </div>
 
           <div className="col-[1/2] row-[1/2] flex flex-col justify-end bg-turquoise/80">
-            <div className="mb-[2.8125rem] ml-[5.625rem]">
-              <h1>FIND YOUR FAMILIA</h1>
-              <p className="text-[2rem]">
+            <div className="mb-14 ml-6 sm:mb-11 sm:ml-20">
+              <h1 className="text-6xl sm:text-7xl">FIND YOUR FAMILIA</h1>
+              <p className="text-2xl font-medium sm:text-3xl">
                 Join our community of innovation excellence.
               </p>
             </div>
           </div>
 
-          <section className="col-[1/2] row-[2/3] flex flex-col items-center bg-cyan py-8 text-[1.75rem]">
-            <h2 className="mb-[1.125rem] font-medium">
+          <section className="col-[1/2] row-[2/3]  flex flex-col items-center bg-cyan px-2 py-8 text-center text-[1.75rem]">
+            <h2 className="text-2xl font-medium sm:mb-[1.125rem] sm:text-4xl">
               Stay Up To Date With Your Comunidad!
             </h2>
-            <p className="text-3xl">Sign Up for The Monthly Hack</p>
+
+            <p className="text-2xl sm:text-3xl">Sign Up for The Monthly Hack</p>
 
             <form
-              className="my-11 flex h-[3.125rem] gap-8"
+              className="my-8 flex h-10 gap-3 sm:my-10 sm:h-[3.125rem] sm:gap-8"
               onSubmit={handleSubmit}
             >
               <input
-                className=" w-[25rem] rounded-[10px] pl-4 text-black placeholder:text-[1.75rem] placeholder:font-medium"
+                className="w-64 rounded-[10px] pl-3 text-2xl text-black placeholder:text-2xl placeholder:font-medium sm:w-[25rem] sm:pl-4 sm:placeholder:text-[1.75rem]"
                 type="email"
                 name="email"
                 value={email}
@@ -60,19 +65,21 @@ export default function joinus(props) {
                 placeholder="hacker@gmail.com"
               />
               <button
-                className="m-0 rounded-[10px] border-none bg-turquoise p-0 px-6 text-[1.75rem] font-medium leading-[2.125rem] text-black hover:border-none"
+                className="m-0 border-none bg-turquoise p-0 px-3 text-xl font-medium text-black hover:border-none sm:px-6 sm:text-3xl"
                 type="submit"
               >
                 Join Us
               </button>
             </form>
 
-            <p className="mb-7 max-w-[62rem] text-center  leading-[2.125rem]">
+            <p className="mb-7 text-xl sm:text-3xl">
               We send out monthly newsletters with innovator resources and
               events happening in Austin and beyond.
             </p>
 
-            <p className="mb-4 font-semibold">Ways to Follow the Community</p>
+            <p className="mb-4 text-2xl font-semibold sm:text-3xl">
+              Ways to Follow the Community
+            </p>
 
             <ul className="flex gap-10">
               <a
@@ -116,10 +123,6 @@ export default function joinus(props) {
           </section>
         </header>
       </div>
-
-      {/* CardsWithLink  */}
-
-      {/* Leadership */}
     </Layout>
   );
 }
