@@ -6,14 +6,14 @@ export default function Header(props) {
 
   return (
     <header
-      className="bg-white flex flex-row border-b-2 border-cyan py-4 w-full fixed top-0 z-50"
+      className="bg-white flex flex-row py-3 w-full sticky top-0 z-50 text-lg"
     >
-      <section className="container mx-auto flex flex-col md:flex-row items-center md:gap-24">
+      <section className="container mx-auto flex flex-col md:flex-row items-center md:gap-20">
         <Link href={"/"}>
           <Image
             src='/static/images/logo.png'
             alt='Hispanic Hacker Logo'
-            width={100}
+            width={175}
             height={100}
           />
         </Link>

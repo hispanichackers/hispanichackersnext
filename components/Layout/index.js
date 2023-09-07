@@ -5,7 +5,7 @@ export default function Layout(props) {
   return (
     <>
       <Header {...props} />
-      <main className="pt-[150px] md:pt-[122px]">
+      <main>
         {props.children}
       </main>
       <Footer {...props} />
