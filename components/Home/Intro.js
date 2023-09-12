@@ -23,29 +23,29 @@ export default function Intro() {
               industry leaders, and networking opportunities.
             </p>
           </div>
-          <div className="grid grid-cols-2 bg-yellow-600/50  text-center">
+          <div className="grid grid-cols-2 text-center">
             <Link
               href="/about"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow "
+              className="bg-yellow/75 p-14 border-l-8 border-t-8 border-r-4 border-b-4 border-yellow h-44 text-white font-bold hover:bg-yellow "
             >
               Join Us
             </Link>
             <Link
               href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
               target="_blank"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow"
+              className="bg-yellow/75 p-14 border-r-8 border-t-8  border-l-4 border-b-4 border-yellow h-44 text-white font-bold text-2xl sm:text-3xl hover:bg-yellow"
             >
               Upcoming Events
             </Link>
             <Link
               href="/contact"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow"
+              className="bg-yellow/75 p-14 border-l-8 border-b-8 border-r-4 border-t-4 border-yellow h-44 text-white font-bold hover:bg-yellow"
             >
               Resources
             </Link>
             <Link
               href="/contact"
-              className="bg-yellow/75 p-14 border-4 border-yellow-500 h-44 text-white font-bold hover:bg-yellow"
+              className="bg-yellow/75 p-14 border-l-4 border-t-4 border-r-8 border-b-8 border-yellow h-44 text-white font-bold hover:bg-yellow"
             >
               Contact Us
             </Link>

@@ -1,21 +1,23 @@
-import styled from 'styled-components';
 import Image from 'next/image';
 import Menus from './Menus';
 import Link from 'next/link';
 
 export default function Header(props) {
+
   return (
-    <header className="bg-white flex flex-row border-b-2 border-cyan py-4">
-      <section className="container mx-auto flex flex-col md:flex-row items-center md:gap-24">
+    <header
+      className="bg-white flex flex-row py-3 w-full sticky top-0 z-50 text-lg"
+    >
+      <section className="container mx-auto flex flex-col md:flex-row items-center md:gap-20">
         <Link href={"/"}>
           <Image
             src='/static/images/logo.png'
             alt='Hispanic Hacker Logo'
-            width={100}
+            width={175}
             height={100}
           />
         </Link>
-        <Menus {...props} textColor="#277e7e" font="bold"/>
+        <Menus {...props} fontColor="text-cyan" font="bold"/>
       </section>
     </header>
   );
