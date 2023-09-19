@@ -17,11 +17,12 @@ module.exports = {
         yellow: "#f5bb00",
         red: "#fb2626",
       },
+      
       fontFamily: {
-        sans: ["Helvetica", "sans-serif"],
-        serif: ["Georgia", "serif"],
-        bebas: ["Bebas Neue"],
-        inter: ["Inter", "sans-serif"],
+        "sans": ["Helvetica", "sans-serif"],
+        "serif": ["Georgia", "serif"],
+        "bebas": ["Bebas Neue"],
+        "inter": ["Inter", "sans-serif"],
       },
     },
   },
