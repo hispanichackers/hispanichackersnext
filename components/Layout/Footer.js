@@ -3,6 +3,8 @@ import Menus from './Menus';
 import { FcLike } from 'react-icons/fc';
 
 
+
+
 export default function Footer(props) {
   return (
     <footer className="p-4 bg-black text-white">
