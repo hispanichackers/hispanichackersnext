@@ -24,7 +24,7 @@ export default function joinus() {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center font-inter">
+      <div className="items-center font-inter text-white sm:flex sm:flex-col">
         <header className="grid max-w-[90rem] grid-rows-[minmax(0,_600px)_minmax(0,_1fr)]">
           <div className="col-[1/2] row-[1/3] overflow-hidden">
             <Image
@@ -65,7 +65,7 @@ export default function joinus() {
                 placeholder="hacker@gmail.com"
               />
               <button
-                className="m-0 border-none bg-turquoise p-0 px-3 text-xl font-medium text-black hover:border-none sm:px-6 sm:text-3xl"
+                className="m-0 rounded-lg border-none bg-turquoise p-0 px-3 text-xl font-medium text-black hover:border-none sm:px-6 sm:text-3xl"
                 type="submit"
               >
                 Join Us
@@ -122,6 +122,154 @@ export default function joinus() {
             </ul>
           </section>
         </header>
+      </div>
+
+      <div className="mx-auto max-w-[720px] font-inter lg:max-w-[1440px]">
+        <div className="lg:flex">
+          <div className="relative lg:basis-1/2">
+            <Image
+              src="/static/images/attend-an-event.png"
+              alt="whiteboarding"
+              width={720}
+              height={435}
+            />
+
+            <div className="absolute inset-0 flex items-end justify-end bg-orange/80 p-5 text-white lg:px-10">
+              <h2 className="font-bebas text-5xl lg:text-7xl">
+                ATTEND AN EVENT
+              </h2>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center p-4 text-xl lg:basis-1/2 lg:px-8 xl:text-3xl">
+            <p className="mb-5">
+              Hispanic Hackers hosts social events, career preparation, and
+              innovative collaboration events throughout the year. Join us for a
+              cafecito, a chat, and community growth!
+            </p>
+
+            <a
+              className="flex items-center justify-center gap-3"
+              href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
+              target="_blank"
+            >
+              <Image
+                className="h-16 w-16 lg:h-32 lg:w-32"
+                src="/static/images/meetup-logo.png"
+                alt="meetup-logo"
+                width={64}
+                height={64}
+              />
+
+              <span className="font-medium">Find an Event</span>
+
+              <Image
+                className="h-6 w-16"
+                src="/static/images/Arrow2.png"
+                alt="arrow black"
+                width={60}
+                height={23}
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row-reverse">
+          <div className="relative lg:basis-1/2">
+            <Image
+              src="/static/images/get-plugged-in.png"
+              alt="community selfie"
+              width={720}
+              height={435}
+            />
+
+            <div className="absolute inset-0 flex items-end justify-end bg-cyan/80 p-5 text-white lg:justify-start lg:px-10">
+              <h2 className="font-bebas text-5xl lg:text-7xl">
+                GET PLUGGED IN
+              </h2>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center p-4 text-xl lg:basis-1/2 lg:px-8 xl:text-3xl">
+            <p className="mb-5">
+              We host an active Discord server for community discussion and
+              online meetings. Join our online community!
+            </p>
+
+            <a
+              className="flex items-center justify-center gap-3"
+              href="https://discord.gg/67nEABfYcn"
+              target="_blank"
+            >
+              <Image
+                className="lg:w-32"
+                src="/static/images/discord-logo.png"
+                alt="meetup-logo"
+                width={64}
+                height={49}
+              />
+
+              <span className="font-medium">Join Our Discord</span>
+
+              <Image
+                className="h-6 w-16"
+                src="/static/images/Arrow2.png"
+                alt="arrow black"
+                width={60}
+                height={23}
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="lg:flex">
+          <div className="relative lg:basis-1/2">
+            <Image
+              src="/static/images/next-big-thing.png"
+              alt="city view"
+              width={720}
+              height={435}
+            />
+
+            <div className="absolute inset-0 flex items-end justify-end bg-yellow/80 p-5 text-white lg:px-10">
+              <h2 className="font-bebas text-5xl lg:text-7xl">
+                FIND YOUR NEXT BIG THING
+              </h2>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center p-4 text-xl lg:basis-1/2 lg:px-8 xl:text-3xl">
+            <p className="mb-5">
+              Find your next project, job, or career goal through our network of
+              innovation excellence. Sign up as a member and reach out to our
+              leaders below!
+            </p>
+
+            <a
+              className="flex items-center justify-center gap-3"
+              href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
+              target="_blank"
+            >
+              <Image
+                className="lg:w-32"
+                src="/static/images/HH-logo-only.png"
+                alt="meetup-logo"
+                width={64}
+                height={60}
+              />
+
+              <span className="font-medium">Become a Member</span>
+
+              <Image
+                className="h-6 w-16"
+                src="/static/images/Arrow2.png"
+                alt="arrow black"
+                width={60}
+                height={23}
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </Layout>
   );
