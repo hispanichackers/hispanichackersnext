@@ -78,6 +78,8 @@ export default function globals() {
       website: 'https://www.drebarrera.com',
       github: 'https://www.github.com/drebarrera',
       bio: 'Andrés is a Full Stack Engineer with a passion for data automation, entrepreneurship, and social advocacy. With a degree in Computer Engineering from Purdue University and nine years of programming experience, he loves taking the world by surprise with tenacity and a little bit of audacity.',
+      bio2: 'Andrés Barrera is an ambitious full stack engineer and aspiring tech maverick in the US and LATAM. Having made early decisions to be a pioneer and advocate for his community, he has always been eager to break barriers and cross borders. Andrés has a degree from Purdue University in Computer Engineering and has been developing software applications for the last nine years.',
+      role: 'President, Engineer',
     },
     leroy: {
       name: 'Leroy Rosales',
@@ -85,6 +87,17 @@ export default function globals() {
       website: 'https://leroyrosales.com',
       github: 'https://www.github.com/leroyrosales',
       bio: 'Leroy is just a nerd that likes punk. If you had to put a label on his role, probably front-end-to-sorta-full-stack dev. When he’s not behind the computer, he’s shaking up a killer tiki cocktail, watching classic horror movies, and as he puts it: going "full dad-mode" in his new hybrid minivan.',
+      role: 'Leader',
+    }, 
+    jesus: {
+      name: 'Jesus Oyervides',
+      linkedin: 'https://www.linkedin.com/in/jesus-oyervides-jr/',
+      role: 'Leader',
+    },
+    nathan: {
+      name: 'Nathan Foss',
+      linkedin: 'https://www.linkedin.com/in/nathan-foss/',
+      role: 'Leader',
     },
   };
 
