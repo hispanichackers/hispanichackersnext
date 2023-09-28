@@ -25,7 +25,7 @@ export default function WorldRender() {
     return (
       <div className="h-full lg:h-max md:row-span-2 md:relative lg:row-span-3 lg:bottom-96 ">
       <img
-        className=" lg:h-max lg:w-max lg:absolute lg:mt-72"
+        className=" lg:h-max lg:w-max lg:absolute lg:mt-72 xl:mt-80"
         src={worldArray[0]}
         alt="Hack the New World"
       />
