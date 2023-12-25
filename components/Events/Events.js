@@ -22,7 +22,7 @@ export default function Events({ year }) {
                 src={
                   event.titleSlide
                     ? `/static/images/${event.titleSlide}`
-                    : "/static/images/hhatx.png"
+                    : "/static/images/hhatx.webp"
                 }
                 alt={event.name + event.date}
                 width={480}

@@ -32,9 +32,6 @@ const Section = styled.section`
     width: 3rem;
     height: 3rem;
   }
-  @media (min-width: 768px) {
-    flex-wrap: nowrap;
-  }
   @media (min-width: 1440px) {
     width: 30%;
   }
@@ -78,8 +75,8 @@ export default function Socials() {
   const { socialsHH } = globals();
   return (
     <Section>
-      <div className="flex p-1">
-        <a href={socialsHH.meetup.url} alt={socialsHH.meetup.alt} target='_blank'>
+      <div className="flex flex-wrap p-1">
+        {/*<a href={socialsHH.meetup.url} alt={socialsHH.meetup.alt} target='_blank'>
           <Meetup title={socialsHH.meetup.alt} />
         </a>
         <a href={socialsHH.slack.url} alt={socialsHH.slack.alt} target='_blank'>
@@ -153,7 +150,8 @@ export default function Socials() {
       </a>
       <a href={socialsHH.discord.url} alt={socialsHH.discord.alt} target='_blank'>
         <Discord title={socialsHH.discord.alt} />
-      </a>
-    </Section>
+      </a>*/}
+    </div>
+  </Section>
   );
 }

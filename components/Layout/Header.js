@@ -6,9 +6,9 @@ export default function Header(props) {
 
   return (
     <header
-      className="bg-white flex flex-row py-3 w-full sticky top-0 z-50 text-lg"
+      className="bg-white flex flex-row py-3 w-full sticky top-0 z-50 text-xl"
     >
-      <section className="container mx-auto flex flex-col md:flex-row items-center md:gap-20">
+      <section className="container mx-auto flex flex-col gap-y-2 md:flex-row items-center md:gap-20">
         <Link href={"/"}>
           <Image
             src='/static/images/logo.png'

@@ -21,7 +21,7 @@ export default function Blog({ allPostsData }) {
         ))}
       </ul>
       <Image
-        src='/static/images/hhatx.png'
+        src='/static/images/hhatx.webp'
         alt='Hispanic Hacker Collage'
         width={800}
         height={533}

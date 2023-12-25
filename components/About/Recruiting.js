@@ -24,7 +24,7 @@ export default function Recruiting() {
         </ul>
         <ul className="p-0">
           <Image
-            src='/static/images/zoom.png'
+            src='/static/images/zoom.webp'
             alt='Zoom meetup'
             width={846.5}
             height={481.5}
