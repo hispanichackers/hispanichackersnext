@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaDiscord } from "react-icons/fa";
 import globals from "../assets/GlobalData";
@@ -6,6 +7,8 @@ import Layout from "../components/Layout";
 import facebookIcon from "../public/static/images/facebook-icon.svg";
 import instagramIcon from "../public/static/images/instagram-icon.svg";
 import linkedinIcon from "../public/static/images/linkedin-icon.svg";
+import discordIcon from "../public/static/images/discord-logo.webp";
+import ArrowLink from "../components/Home/Links/arrowlink";
 
 export default function joinus() {
   const { socialsHH } = globals();
@@ -19,258 +22,119 @@ export default function joinus() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      alert("submited");
+      alert("submited: " + email);
     }
   };
 
+  const socials = [
+    { icon: discordIcon, url: socialsHH.discord.url, alt: socialsHH.discord.alt },
+    { icon: instagramIcon, url: socialsHH.instagram.url, alt: socialsHH.instagram.alt },
+    { icon: facebookIcon, url: socialsHH.facebook.url, alt: socialsHH.facebook.alt },
+    { icon: linkedinIcon, url: socialsHH.linkedin.url, alt: socialsHH.linkedin.alt },
+  ]
+
+  const featured = {
+    "ATTEND AN EVENT": {
+      bg: "/static/images/attend-an-event.webp",
+      color: "orange",
+      text: "Hispanic Hackers hosts social events, career preparation, and innovative collaboration events throughout the year. Join us for a cafecito, a chat, and community growth!",
+      flex: "flex-row",
+      link: {
+        icon: "/static/images/meetup-logo.webp",
+        url: "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+        text: "Find an Event",
+        target: "_blank"
+      }
+    },
+    "GET PLUGGED IN": {
+      bg: "/static/images/get-plugged-in.webp",
+      color: "cyan",
+      text: "We host an active Discord server for community discussion and online meetings. Join our online community!",
+      flex: "flex-row-reverse",
+      link: {
+        icon: "/static/images/discord-logo.webp",
+        url: "https://discord.gg/67nEABfYcn",
+        text: "Join Our Discord",
+        target: "_blank"
+      }
+    },
+    "FIND YOUR NEXT BIG THING": {
+      bg: "/static/images/next-big-thing.webp",
+      color: "yellow",
+      text: "Find your next project, job, or career goal through our network of innovation excellence. Sign up as a member and reach out to our leaders below!",
+      flex: "flex-row",
+      link: {
+        icon: "/static/images/hispanic-hackers-icon.webp",
+        url: "/join/#pagetop",
+        text: "Become a Member",
+        target: ""
+      }
+    }
+  }
+
   return (
     <Layout>
-      <header className="relative">
-        <Image
-          className="max-h-[37.5rem] w-full object-cover"
-          src="/static/images/joinus_meeting.webp"
-          alt="event meeting"
-          width={1440}
-          height={959}
-        />
-
-        <div className="absolute inset-0 flex flex-col justify-end bg-turquoise/80 font-inter text-white">
-          <div className="mb-14 ml-6 sm:mb-11 sm:ml-20">
-            <h1 className="text-6xl sm:text-7xl">FIND YOUR FAMILIA</h1>
-            <p className="text-2xl font-medium sm:text-3xl">
-              Join our community of innovation excellence.
-            </p>
-          </div>
+      <section id="pagetop" className="relative h-80 w-full md:h-96">
+        <div className="w-full h-full bg-turquoise/80 absolute flex flex-col justify-end pb-4 pl-4 md:pl-12 text-white">
+          <h1 className="text-6xl sm:text-7xl">FIND YOUR FAMILIA</h1>
+          <p className="text-2xl font-medium">Join our community of innovation excellence.</p>
         </div>
-      </header>
-
-      <section className="flex flex-col items-center bg-cyan px-2 py-8 text-center font-inter text-[1.75rem] text-white">
-        <h2 className="text-2xl font-medium sm:mb-[1.125rem] sm:text-4xl">
-          Stay Up To Date With Your Comunidad!
-        </h2>
-
-        <p className="text-2xl sm:text-3xl">Sign Up for The Monthly Hack</p>
-
-        <form
-          className="my-8 flex h-10 gap-3 sm:my-10 sm:h-[3.125rem] sm:gap-8"
-          onSubmit={handleSubmit}
-        >
-          <input
-            className="w-64 rounded-[10px] pl-3 text-2xl text-black placeholder:text-2xl placeholder:font-medium sm:w-[25rem] sm:pl-4 sm:placeholder:text-[1.75rem]"
-            type="email"
-            name="email"
-            value={email}
-            onChange={onchange}
-            placeholder="hacker@gmail.com"
-          />
-
-          <button
-            className="m-0 rounded-lg border-none bg-turquoise p-0 px-3 text-xl font-medium text-black hover:border-none sm:px-6 sm:text-3xl"
-            type="submit"
-          >
-            Join Us
-          </button>
-        </form>
-
-        <p className="mb-7 text-xl sm:text-3xl">
-          We send out monthly newsletters with innovator resources and events
-          happening in Austin and beyond.
-        </p>
-
-        <p className="mb-4 text-2xl font-semibold sm:text-3xl">
-          Ways to Follow the Community
-        </p>
-
-        <ul className="flex gap-10">
-          <a
-            href={socialsHH.discord.url}
-            alt={socialsHH.discord.alt}
-            target="_blank"
-          >
-            <FaDiscord
-              className="text-[3.125rem]"
-              title={socialsHH.discord.alt}
-            />
-          </a>
-          <a href={socialsHH.instagram.url} target="_blank">
-            <Image
-              className="h-[3.125rem] w-[3.125rem]"
-              priority
-              src={instagramIcon}
-              title={socialsHH.instagram.alt}
-              alt={socialsHH.instagram.alt}
-            />
-          </a>
-          <a href={socialsHH.facebook.url} target="_blank">
-            <Image
-              className="h-[3.125rem] w-[3.125rem]"
-              priority
-              src={facebookIcon}
-              title={socialsHH.facebook.alt}
-              alt={socialsHH.facebook.alt}
-            />
-          </a>
-          <a href={socialsHH.linkedin.url} target="_blank">
-            <Image
-              className="h-[3.125rem] w-[3.125rem]"
-              priority
-              src={linkedinIcon}
-              title={socialsHH.linkedin.alt}
-              alt={socialsHH.linkedin.alt}
-            />
-          </a>
-        </ul>
+        <img src="/static/images/joinus_meeting.webp" className="h-full w-full object-cover"/>
       </section>
 
+      <section id="signupform" className="flex flex-col items-center bg-white px-2 py-8 text-center font-inter text-black h-fit">
+        <div className="px-4 py-8 max-w-[800px] flex flex-col items-center gap-y-2">
+          <h2 className="text-2xl md:text-3xl">Stay Up To Date With Your Comunidad!</h2>
+          <p className="text-xl md:text-2xl font-light">Sign Up for The Monthly Hack</p>
+          <form className="my-6 flex h-10 gap-3" onSubmit={handleSubmit}>
+            <input className="w-52 rounded-[10px] pl-3 border-turquoise border-2 text-black text-md placeholder:text-md placeholder:font-medium md:w-64 md:text-lg md:placeholder:text-lg" type="email" name="email" value={email} onChange={onchange} placeholder="hacker@gmail.com"/>
+            <button className="m-0 rounded-lg border-none bg-gradient-to-br from-turquoise to-[#2BFEFF] p-0 px-3 font-medium text-black hover:border-none text-md w-fit hover:scale-110" type="submit">
+              Join Us
+            </button>
+          </form>
+          <p className="mb-7 text-xl md:text-2xl font-light">We send out monthly newsletters with innovator resources and events happening in Austin and beyond.</p>
+          <p className="mb-4 text-xl font-medium md:text-2xl"> Ways to Follow the Community</p>
+          <ul className="flex gap-6 md:gap-8">
+            {
+              socials.map((s) => {
+                return (
+                  <Link href={s.url} target="_blank" className="hover:scale-125">
+                    <Image
+                      className="h-8 w-auto md:h-10"
+                      src={s.icon}
+                      alt={s.alt}
+                    />
+                  </Link>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </section>
       <section className="mx-auto font-inter">
-        <div className="lg:flex">
-          <div className="relative lg:basis-1/2">
-            <Image
-              className="w-full"
-              src="/static/images/attend-an-event.png"
-              alt="whiteboarding"
-              width={720}
-              height={435}
-            />
-
-            <div className="absolute inset-0 flex items-end justify-end bg-orange/80 p-5 text-white lg:px-10">
-              <h2 className="font-bebas text-5xl lg:text-7xl">
-                ATTEND AN EVENT
-              </h2>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center p-4 text-xl lg:basis-1/2 lg:px-8 xl:text-3xl">
-            <p className="mb-5">
-              Hispanic Hackers hosts social events, career preparation, and
-              innovative collaboration events throughout the year. Join us for a
-              cafecito, a chat, and community growth!
-            </p>
-
-            <a
-              className="flex items-center justify-center gap-3"
-              href="https://www.meetup.com/austin-hispanic-hackers-meetup/"
-              target="_blank"
-            >
-              <Image
-                className="h-16 w-16 lg:h-32 lg:w-32"
-                src="/static/images/meetup-logo.png"
-                alt="meetup-logo"
-                width={64}
-                height={64}
-              />
-
-              <span className="font-medium">Find an Event</span>
-
-              <Image
-                className="h-6 w-16"
-                src="/static/images/Arrow2.png"
-                alt="arrow black"
-                width={60}
-                height={23}
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row-reverse">
-          <div className="relative lg:basis-1/2">
-            <Image
-              className="w-full"
-              src="/static/images/get-plugged-in.png"
-              alt="community selfie"
-              width={720}
-              height={435}
-            />
-
-            <div className="absolute inset-0 flex items-end justify-end bg-cyan/80 p-5 text-white lg:justify-start lg:px-10">
-              <h2 className="font-bebas text-5xl lg:text-7xl">
-                GET PLUGGED IN
-              </h2>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center p-4 text-xl lg:basis-1/2 lg:px-8 xl:text-3xl">
-            <p className="mb-5">
-              We host an active Discord server for community discussion and
-              online meetings. Join our online community!
-            </p>
-
-            <a
-              className="flex items-center justify-center gap-3"
-              href="https://discord.gg/67nEABfYcn"
-              target="_blank"
-            >
-              <Image
-                className="lg:w-32"
-                src="/static/images/discord-logo.png"
-                alt="meetup-logo"
-                width={64}
-                height={49}
-              />
-
-              <span className="font-medium">Join Our Discord</span>
-
-              <Image
-                className="h-6 w-16"
-                src="/static/images/Arrow2.png"
-                alt="arrow black"
-                width={60}
-                height={23}
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className="lg:flex">
-          <div className="relative lg:basis-1/2">
-            <Image
-              className="w-full"
-              src="/static/images/next-big-thing.png"
-              alt="city view"
-              width={720}
-              height={435}
-            />
-
-            <div className="absolute inset-0 flex items-end justify-end bg-yellow/80 p-5 text-white lg:px-10">
-              <h2 className="font-bebas text-5xl lg:text-7xl">
-                FIND YOUR NEXT BIG THING
-              </h2>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center p-4 text-xl lg:basis-1/2 lg:px-8 xl:text-3xl">
-            <p className="mb-5">
-              Find your next project, job, or career goal through our network of
-              innovation excellence. Sign up as a member and reach out to our
-              leaders below!
-            </p>
-
-            <a
-              className="flex items-center justify-center gap-3"
-              href={`https://www.hispanichackers.com/join/#${signup_id}`}
-              target="_blank"
-            >
-              <Image
-                className="lg:w-32"
-                src="/static/images/HH-logo-only.png"
-                alt="meetup-logo"
-                width={64}
-                height={60}
-              />
-
-              <span className="font-medium">Become a Member</span>
-
-              <Image
-                className="h-6 w-16"
-                src="/static/images/Arrow2.png"
-                alt="arrow black"
-                width={60}
-                height={23}
-              />
-            </a>
-          </div>
-        </div>
+        {
+          Object.entries(featured).map(([name, data]) => (
+            <div className={"md:flex " + data.flex}>
+              <div className="relative md:basis-1/2">
+                <img className="w-full" src={data.bg}/>
+                <div className={"absolute inset-0 flex items-end justify-end bg-" + data.color + "/80 p-5 text-white md:px-10"}>
+                  <h2 className="font-bebas text-5xl md:text-7xl">{name}</h2>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center p-8 text-lg md:basis-1/2 md:px-8 md:text-xl lg:text-2xl">
+                <p className="mb-5">{data.text}</p>
+                <div className="flex items-center justify-center gap-x-4">
+                  <Link href={data.link.url} target={data.link.target}>
+                    <img className="w-16 h-auto md:w-16 lg:w-20" src={data.link.icon} />
+                  </Link>
+                  <ArrowLink 
+                    details={{ link: data.link.text, url: data.link.url, target: data.link.target, color: "black" }}
+                  ></ArrowLink>
+                </div>
+              </div>
+              </div>
+          ))
+        }
       </section>
     </Layout>
   );

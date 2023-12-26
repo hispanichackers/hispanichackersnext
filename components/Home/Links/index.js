@@ -36,7 +36,7 @@ export default function Links() {
         </div>
         <h4 className="text-black text-2xl">Interested in Partnering with Us?</h4>
         <ArrowLink
-                details={{ link: "Contact Us", url: "/join", target:"", color: "#267e7e" }}
+          details={{ link: "Contact Us", url: "/join", target:"", color: "#267e7e" }}
         ></ArrowLink>
       </div>
     </>

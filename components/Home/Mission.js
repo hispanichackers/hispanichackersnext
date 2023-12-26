@@ -14,7 +14,7 @@ export default function Mission() {
     <section className="flex flex-col bg-cyan md:grid md:grid-cols-2 md:grid-rows-3">
       {isClient && <WorldRender />}
 
-      <div className=" mb-10 ml-10 h-max text-center text-white mt-2 lg:mt-20 2xl:ml-60 lg:ml-18 max-w-[600px] lg:ml-20">
+      <div className=" mb-10 ml-10 h-max text-center text-white mt-6 lg:mt-20 2xl:ml-60 lg:ml-18 max-w-[600px] lg:ml-20 md:mb-0">
         <h2 className="text-left text-2xl font-sans-serif lg:text-left md:mt-10 lg:text-3xl">
           Austin born, <br></br>
           <span className="w-full font-bebas text-5xl lg:text-6xl">
@@ -44,7 +44,7 @@ export default function Mission() {
           alt="Satelite"
         />
       </div>
-      <div className=" ml-6 h-max text-white pb-12  md:col-span-1 max-w-[600px] lg:ml-20">
+      <div className=" ml-6 h-max text-white pb-12 md:col-span-1 max-w-[600px] lg:ml-20">
         <h2 className="mt-6 text-left text-2xl font-light md:mt-2 lg:text-3xl">
           Participate from <br></br>
           <span className="text-left font-bebas text-5xl lg:text-left ">
