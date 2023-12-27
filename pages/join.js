@@ -76,8 +76,8 @@ export default function joinus() {
     <Layout>
       <section id="pagetop" className="relative h-80 w-full md:h-96">
         <div className="w-full h-full bg-turquoise/80 absolute flex flex-col justify-end pb-4 pl-4 md:pl-12 text-white">
-          <h1 className="text-6xl sm:text-7xl">FIND YOUR FAMILIA</h1>
-          <p className="text-2xl font-medium">Join our community of innovation excellence.</p>
+          <h1 className="text-6xl md:text-7xl">FIND YOUR FAMILIA</h1>
+          <p className="text-2xl lg:text-3xl font-medium">Join our community of innovation excellence.</p>
         </div>
         <img src="/static/images/joinus_meeting.webp" className="h-full w-full object-cover"/>
       </section>

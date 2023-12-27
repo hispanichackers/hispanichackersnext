@@ -1,48 +1,69 @@
 import React from "react";
 import Image from "next/image";
+import ArrowLink from "../components/Home/Links/arrowlink";
 
 export default function ResourceCard({
   title,
-  copy,
-  linkCopy,
+  text,
+  linkText,
   linkUrl,
   image,
   imageAlt,
+  tags,
+  linkTarget
 }) {
+  const icons = {
+    "developers": {
+      icon: "/static/images/gear.svg",
+      color: "#ff6000"
+    },
+    "entrepreneurs": {
+      icon: "/static/images/briefcase.svg",
+      color: "#267e7e"
+    },
+    "nonprofits": {
+      icon: "/static/images/volunteer.svg",
+      color: "#41cecf"
+    },
+    "students": {
+      icon: "/static/images/cap.svg",
+      color: "#f5bb00"
+    }
+  }
   return (
     <>
-      <div className="bg-[#F4EBDC] p-8 md:py-12 md:px-24 rounded-[25px] text-black">
-        <h3 className="font-bold">{title}</h3>
-        <article className="grid md:grid-cols-[1fr_3fr] gap-8 mt-8">
-          <Image
-            src={image}
-            alt={imageAlt}
-            width={400}
-            height={400}
-            className="w-full"
-          />
-          <div className="text-3xl">
-            <p className="mb-8">{copy}</p>
-            <a
-              href={linkUrl}
-              className="flex flex-row text-black items-center gap-2 md:gap-4"
-            >
-              {linkCopy}{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="61"
-                height="23"
-                fill="none"
-                viewBox="0 0 61 23"
-              >
-                <path
-                  fill="#000"
-                  d="M60.079 12.542a1.5 1.5 0 0 0-.037-2.12l-9.709-9.38a1.5 1.5 0 1 0-2.084 2.157l8.63 8.338-8.338 8.63A1.5 1.5 0 1 0 50.7 22.25l9.38-9.709ZM1.026 14l58-1-.052-3-58 1 .052 3Z"
-                />
-              </svg>
-            </a>
+      <div className="flex flex-col bg-[#F4EBDC] p-4 rounded-[25px] text-black w-[350px] h-auto min-h-[225px] md:w-[450px] md:p-6 gap-y-2 hover:scale-105">
+        <div className="flex flex-col flex-wrap md:flex-nowrap md:flex-row md:justify-between gap-x-2 gap-y-1">
+          <h3 className="font-bold text-lg md:text-xl leading-6 md:leading-6">{title}</h3>
+          <div className="flex flex-row gap-x-1">
+            {
+              tags.map((tag) => {
+                if (icons[tag]) {
+                  return (<div key={tag} style={{ backgroundColor: icons[tag].color }} className={`flex justify-center items-center w-[24px] h-[24px] rounded-[12px] bg-${icons[tag].color}`}>
+                    <img src={icons[tag].icon} className="h-2/3 fill-white"/>
+                  </div>)
+                }
+              })
+            }
           </div>
-        </article>
+        </div>
+        <div className="flex flex-row h-fill gap-x-4 items-center md:gap-x-6">
+          {
+            image && (
+                <div className="w-[75px] md:w-[100px]">
+                  <img src={image} alt={imageAlt} className="w-fill h-auto" />
+                </div>
+            )
+          }
+          <div className="flex flex-col text-base w-[250px] md:w-[300px] md:text-lg gap-y-2">
+            <p className="leading-5">{text}</p>
+            <div className="self-end">
+            <ArrowLink 
+              details={{ link: linkText, url: linkUrl, target: linkTarget, color: "black" }}
+            ></ArrowLink>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

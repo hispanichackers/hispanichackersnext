@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import Contact from '../components/Home/Links/Contact';
+import Contact from '../components/Contact';
 
 export default function AboutPage(props) {
   return (

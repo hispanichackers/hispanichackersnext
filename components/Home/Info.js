@@ -25,7 +25,7 @@ export default function Info() {
                         <p className="text-lg lg:text-xl">We are more than a professional network - we’re a community. Hispanic Hackers is a great place to find familia and break through new ideas.</p>
                     </div>
                     <div className="flex flex-col gap-y-2">
-                        <h3 className="text-cyan font-bold text-xl lg:text-2xl">200+ Tech Resources</h3>
+                        <h3 className="text-cyan font-bold text-xl lg:text-2xl">100+ Tech Resources</h3>
                         <p className="text-lg lg:text-xl">New to Austin? New to tech? How can we help? We offer resources, events, and volunteer opportunities. Join us, find your community, and explore the next steps in your career.</p>
                     </div>
                 </div>

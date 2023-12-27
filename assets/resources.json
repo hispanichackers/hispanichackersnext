@@ -1,0 +1,202 @@
+{
+    "Join Hispanic Hackers": {
+        "text": "Join us and get connected with your one-stop-shop for getting in touch with industry professionals, opportunities, and resources.",
+        "icon": "/static/images/hispanic-hackers-icon.webp",
+        "link": {
+            "url": "/join",
+            "text": "Join Our Familia",
+            "target": ""
+        },
+        "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "learn", "develop"]
+    },
+    "Hispanic Hackers Office Hours": {
+        "text": "Hispanic Hackers hosts weekly online office hours where we chat about our latest projects, bugs, interests.",
+        "icon": "/static/images/weekly-to-do.webp",
+        "link": {
+            "url": "https://discord.gg/67nEABfYcn",
+            "text": "Join an Online Social",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "learn", "develop"]
+    },
+    "Free Udemy Courses Through GALE": {
+        "text": "GALE Presents provides a free version of the Udemy platform through public libraries and institutions.",
+        "icon": "/static/images/gale-logo.webp",
+        "link": {
+            "url": "https://link.gale.com/apps/UDEMY",
+            "text": "Learn for Free",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students", "learn"]
+    },
+    "W3 Schools Coding Tutorials": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/w3.webp",
+        "link": {
+            "url": "https://www.w3schools.com",
+            "text": "Learn to Code",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "learn", "develop"]
+    },
+    "Hispanic Hackers Events": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/meetup-logo.webp",
+        "link": {
+            "url": "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+            "text": "Attend an Event",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "learn", "develop"]
+    },
+    "Austin Public Library": {
+        "text": "GALE Presents provides a free version of the Udemy platform through public libraries and institutions.",
+        "icon": "/static/images/apl.webp",
+        "link": {
+            "url": "https://library.austintexas.govY",
+            "text": "Find Austin Resources",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students", "learn"]
+    },
+    "Round Rock Public Library": {
+        "text": "GALE Presents provides a free version of the Udemy platform through public libraries and institutions.",
+        "icon": "/static/images/rrpl.webp",
+        "link": {
+            "url": "https://www.roundrocktexas.gov/city-departments/library-home/",
+            "text": "Find Round Rock Resources",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students", "learn"]
+    },
+    "Latinas in Tech": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/lit.webp",
+        "link": {
+            "url": "https://www.latinasintech.org",
+            "text": "Connect with LiT",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits"]
+    },
+    "Techqueria": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/techqueria.webp",
+        "link": {
+            "url": "https://www.techqueria.org",
+            "text": "Connect with Techqueria",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits"]
+    },
+    "AUTMHQ": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": null,
+        "link": {
+            "url": "https://www.autmhq.org",
+            "text": "Connect with AUTMHQ",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits"]
+    },
+    "FIESTA": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/fiesta.webp",
+        "link": {
+            "url": "https://www.fiesta.community",
+            "text": "Connect with FIESTA",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits"]
+    },
+    "SHPE": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/shpe.webp",
+        "link": {
+            "url": "https://www.shpe.org",
+            "text": "Connect with SHPE",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "nonprofits"]
+    },
+    "Prospanica": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/prospanica.webp",
+        "link": {
+            "url": "https://www.prospanica.org",
+            "text": "Connect with Prospanica",
+            "target": "_blank"
+        },
+        "tags": ["entrepreneurs", "students", "nonprofits"]
+    },
+    "Latinitas": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/latinitas.webp",
+        "link": {
+            "url": "https://www.latinitas.org",
+            "text": "Connect with Latinitias",
+            "target": "_blank"
+        },
+        "tags": ["students", "nonprofits"]
+    },
+    "Austin Nonprofits": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/austin-nonprofit-logo.webp",
+        "link": {
+            "url": "https://www.drebarrera.com/austin-nonprofits/",
+            "text": "Find Your Non-Profit",
+            "target": "_blank"
+        },
+        "tags": ["nonprofits"]
+    },
+    "ChatGPT": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/chatgpt.webp",
+        "link": {
+            "url": "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+            "text": "Ask AI",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students", "nonprofits", "learn", "develop"]
+    },
+    "Visual Studio Code": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/vscode.webp",
+        "link": {
+            "url": "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+            "text": "Start a Project",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "develop"]
+    },
+    "Inkscape": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/inkscape.webp",
+        "link": {
+            "url": "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+            "text": "Start a Project",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "students", "develop"]
+    },
+    "Gimp": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/gimp.webp",
+        "link": {
+            "url": "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+            "text": "Start a Project",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "students", "develop"]
+    },
+    "Toools.design": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join our comunidad and grow with us.",
+        "icon": "/static/images/toools.svg",
+        "link": {
+            "url": "https://www.toools.design",
+            "text": "Find Developer Resources",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "develop"]
+    }
+}
