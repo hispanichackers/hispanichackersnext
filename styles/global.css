@@ -34,3 +34,26 @@ h3 {
   background: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
 }
+
+.resourcesToggled {
+  background-color: white;
+  color: #267e7e;
+}
+
+.resourceButton {
+  background-color: var(--buttoncolor);
+  border-color: var(--buttoncolor);
+  fill: white;
+}
+
+.resourceButtonToggled {
+  background-color: white;
+  color: var(--buttoncolor);
+  fill: var(--buttoncolor);
+}
+
+.resourceButton:hover {
+  background-color: white;
+  color: var(--buttoncolor);
+  fill: var(--buttoncolor);
+}

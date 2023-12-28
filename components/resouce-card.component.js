@@ -13,21 +13,25 @@ export default function ResourceCard({
   linkTarget
 }) {
   const icons = {
-    "developers": {
+    "tool": {
       icon: "/static/images/gear.svg",
-      color: "#ff6000"
+      color: "#ff6000",
+      text: "Tech Tool"
     },
-    "entrepreneurs": {
+    "networking": {
       icon: "/static/images/briefcase.svg",
-      color: "#267e7e"
+      color: "#267e7e",
+      text: "Networking Opportunities"
     },
-    "nonprofits": {
+    "volunteer": {
       icon: "/static/images/volunteer.svg",
-      color: "#41cecf"
+      color: "#41cecf",
+      text: "Volunteer Opportunities"
     },
-    "students": {
+    "scholarships": {
       icon: "/static/images/cap.svg",
-      color: "#f5bb00"
+      color: "#f5bb00",
+      text: "Offers Scholarships"
     }
   }
   return (
@@ -39,7 +43,7 @@ export default function ResourceCard({
             {
               tags.map((tag) => {
                 if (icons[tag]) {
-                  return (<div key={tag} style={{ backgroundColor: icons[tag].color }} className={`flex justify-center items-center w-[24px] h-[24px] rounded-[12px] bg-${icons[tag].color}`}>
+                  return (<div key={tag} title={icons[tag].text} style={{ backgroundColor: icons[tag].color }} className={`flex justify-center items-center w-[24px] h-[24px] rounded-[12px] bg-${icons[tag].color}`}>
                     <img src={icons[tag].icon} className="h-2/3 fill-white"/>
                   </div>)
                 }
@@ -56,7 +60,7 @@ export default function ResourceCard({
             )
           }
           <div className="flex flex-col text-base w-[250px] md:w-[300px] md:text-lg gap-y-2">
-            <p className="leading-5">{text}</p>
+            <p className="leading-5 md:leading-6">{text}</p>
             <div className="self-end">
             <ArrowLink 
               details={{ link: linkText, url: linkUrl, target: linkTarget, color: "black" }}
