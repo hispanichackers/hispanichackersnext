@@ -13,7 +13,6 @@
 
 - [x] Adding our custom domain (2022 Jan)
 - [x] Mobile Responsiveness (2022 Apr)
-- [x] Add Blog Section (2022 Apr)
 - [x] Contact form to remove our gmail address (2022 Apr)
 - [ ] Add how to get started to code section
 - [ ] Adding testing libraries and checking PropTypes
