@@ -14,7 +14,7 @@ export default function Nav({ fontColor, font }) {
       {
         links.map((link) => {
           return (
-            <Link href={link.url} target={link.target}>
+            <Link key={link.title} href={link.url} target={link.target}>
               <span className="w-fit block">{link.title}</span>
             </Link>
           );

@@ -99,6 +99,7 @@ export default function Resources(props) {
           alt="Techqueria Logo"
           width={2560}
           height={250}
+          priority
           className="col-span-full row-span-full h-[400px] md:h-[550px] lg:h-[600px] object-cover object-center w-full"
         />
         <div className="col-span-full row-span-full bg-[#277E7E] bg-opacity-60 flex justify-between flex-col">
@@ -127,7 +128,7 @@ export default function Resources(props) {
         <div className="flex flex-row gap-2 flex-wrap">
           {
             Object.entries(icons).map(([icon, data]) => (
-              <div data-tag={icon} onClick={toggleTag} style={{ "--buttoncolor": data.color }} className={`resourceButton px-4 py-1 rounded-xl text-sm md:text-lg text-white border-3 cursor-pointer flex flex-row gap-x-2`}>
+              <div key={icon} data-tag={icon} onClick={toggleTag} style={{ "--buttoncolor": data.color }} className={`resourceButton px-4 py-1 rounded-xl text-sm md:text-lg text-white border-3 cursor-pointer flex flex-row gap-x-2`}>
                 {<data.icon/>}
                 {data.text}
               </div>
@@ -146,6 +147,7 @@ export default function Resources(props) {
               imageAlt={resource + " Icon"}
               tags={data.tags}
               linkTarget={data.link.target}
+              key={resource}
               />
             ))
           }

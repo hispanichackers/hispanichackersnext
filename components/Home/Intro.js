@@ -34,7 +34,7 @@ export default function Intro() {
             {
               links.map((link) => {
                 return (
-                  <Link href={link.url} target={link.target} className={ "bg-yellow/75 p-1 text-2xl h-fit text-white font-bebas md:text-3xl hover:bg-yellow cursor-pointer border-yellow lg:py-10 border-3 lg:border-4" }>
+                  <Link key={link.title} href={link.url} target={link.target} className={ "bg-yellow/75 p-1 text-2xl h-fit text-white font-bebas md:text-3xl hover:bg-yellow cursor-pointer border-yellow lg:py-10 border-3 lg:border-4" }>
                     <span>{link.title}</span>
                   </Link>
                 );

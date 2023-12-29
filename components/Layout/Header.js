@@ -11,7 +11,7 @@ export default function Header(props) {
       <section className="container mx-auto flex flex-col gap-y-2 md:flex-row items-center md:gap-20">
         <Link href={"/"}>
           <Image
-            src='/static/images/logo.png'
+            src='/static/images/logo.webp'
             alt='Hispanic Hacker Logo'
             width={175}
             height={100}

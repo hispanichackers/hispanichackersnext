@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 export default function Contact() {
   const [formStatus, setFormStatus] = useState(false);
+  const [submitButtonContent, setSubmitButtonContent] = useState("Send");
+  const [message, setMessage] = useState("Get In Touch With Our Tech Familia.");
   const [query, setQuery] = useState({
     name: '',
     email: '',
@@ -17,18 +19,32 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    Object.entries(query).forEach(([key, value]) => {
-      formData.append(key, value);
-    });
-    fetch('https://getform.io/f/081b0ea6-ae9f-4606-bde1-351e0726a78b', {
-      method: 'POST',
-      body: formData,
-    })
-      .then(() => setQuery({ name: '', email: '', message: '' }))
-      .then(() => setFormStatus(true));
+
+    setSubmitButtonContent(<img src="/static/images/loading.gif" className="h-6 w-auto"/>);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(query),
+      });
+
+      if (response.ok) {
+        setFormStatus(true);
+      } else {
+        const data = await response.json();
+        console.error('Form submission failed:', data.error);
+        setSubmitButtonContent("Send");
+        setMessage("Message failed to send. Please try again.");
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitButtonContent("Send");
+      setMessage("Message failed to send. Please try again.");
+    }
   };
 
   if (formStatus) {
@@ -54,7 +70,7 @@ export default function Contact() {
           <div className="flex flex-row gap-x-5 mt-8 md:mt-10 items-center">
             <div className="flex flex-col">
               <h1 className="text-5xl md:text-6xl">SEND US A BYTE OR TWO</h1>
-              <h3 className="font-inter text-xl md:text-2xl">Get In Touch With Our Tech Familia.</h3>
+              <h3 className="font-inter text-xl md:text-2xl">{message}</h3>
             </div>
             <div className="hidden md:block md:w-28">
               <img src="/static/images/hispanic-hackers-icon.webp"/>
@@ -73,7 +89,7 @@ export default function Contact() {
               <label htmlFor='message'>Message</label>
               <textarea name='message' required placeholder='Message' className='form-control text-black w-full h-28 md:h-40 py-2 px-4 rounded-xl' value={query.message} onChange={handleChange()} />
             </div>
-            <button className="mt-4 text-base md:text-lg rounded-lg bg-gradient-to-br to-[#2BFEFF] from-turquoise py-1 px-6 font-medium text-black w-fit hover:scale-110" type="submit">Send</button>
+            <button className="mt-4 text-base md:text-lg rounded-lg bg-gradient-to-br to-[#2BFEFF] from-turquoise py-1 px-6 font-medium text-black w-fit hover:scale-110" type="submit">{ submitButtonContent }</button>
           </form>
         </div>
       </section>

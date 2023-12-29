@@ -28,7 +28,7 @@ export default function Links() {
         <div className="py-8 flex justify-center gap-x-4 flex-wrap gap-y-3 md:gap-x-6 lg:gap-y-4">
           {
             Object.entries(featured).map(([org, data]) => (
-              <Link href={data.url} target="_blank">
+              <Link key={org} href={data.url} target="_blank">
                 <img src={data.image} className="w-24 h-auto hover:opacity-70 md:w-40"/>
               </Link>
             )

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from 'next/router';
 import { FaDiscord } from "react-icons/fa";
 import globals from "../assets/GlobalData";
 import Layout from "../components/Layout";
@@ -13,16 +14,93 @@ import ArrowLink from "../components/Home/Links/arrowlink";
 export default function joinus() {
   const { socialsHH } = globals();
   const [email, setEmail] = useState("");
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
   const [signup_id, setSignup_id] = useState();
+  const [signupStatus, setSignupStatus] = useState("Sign Up for The Monthly Hack");
+  const [submitButtonContent, setSubmitButtonContent] = useState("Join Us");
+  const router = useRouter();
 
   const onchange = (e) => {
-    setEmail(e.target.value);
+    if (e.target.name == "firstname") setFname(e.target.value);
+    if (e.target.name == "lastname") setLname(e.target.value);
+    if (e.target.name == "email") setEmail(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleUnsubscribe = async (e) => {
     e.preventDefault();
-    if (email) {
-      alert("submited: " + email);
+    var unsubscribe = e.target.dataset.email;
+    
+    if (unsubscribe) {
+      setSubmitButtonContent(<img src="/static/images/loading.gif" className="h-6 w-auto"/>);
+      try {
+        const response = await fetch('/api/unsubscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
+  
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Unsubscribe successful');
+            router.replace('/unsubscribed');
+        } else {
+          const data = await response.json();
+          if (error.code == 111) setSignupStatus(<p>The email you've attempted to unsubscribe does not exist.</p>);
+          else setSignupStatus(<>Failed to unsubscribe. <form data-email={data.email} onSubmit={handleUnsubscribe}><button className="text-cyan hover:text-turquoise underline hover:no-underline" type="submit">Try Again</button>.</form></>);
+          document.querySelector('button').classList.add("bg-gradient-to-br");
+          setSubmitButtonContent("Join Us");
+          // Handle failure, e.g., show an error message
+        }
+      } catch (error) {
+        console.error('Error submitting subscription:', error);
+        document.querySelector('button').classList.add("bg-gradient-to-br");
+        setSignupStatus(<p>Failed to unsubscribe.</p>);
+        // Handle unexpected errors
+      }
+    }
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (fname && lname && email) {
+      setSubmitButtonContent(<img src="/static/images/loading.gif" className="h-6 w-auto"/>);
+      try {
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, fname, lname }),
+        });
+  
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Subscription successful');
+          setSignupStatus(<>You have signed up for our monthly newsletters. Welcome to our community! <form data-email={data.email} onSubmit={handleUnsubscribe}><button className="text-cyan hover:text-turquoise underline hover:no-underline" type="submit">Undo</button>.</form></>);
+          setFname("");
+          setLname("");
+          setEmail("");
+          setSubmitButtonContent("Join Us");
+          // Handle success, e.g., show a success message or redirect
+        } else {
+          const data = await response.json();
+          console.error('Subscription failed:', data.error);
+          if (data.code == 111) setSignupStatus(<>The provided email is already subscribed. <form data-email={data.email} onSubmit={handleUnsubscribe}><button className="text-cyan hover:text-turquoise underline hover:no-underline" type="submit">Unsubscribe</button>.</form></>);
+          else setSignupStatus("There was an error registering you for our monthly newsletter. Please try again.");
+          document.querySelector('button').classList.add("bg-gradient-to-br");
+          setSubmitButtonContent("Join Us");
+          // Handle failure, e.g., show an error message
+        }
+      } catch (error) {
+        console.error('Error submitting subscription:', error);
+        setSignupStatus("There was an error registering you for our monthly newsletter. Please try again.");
+        document.querySelector('button').classList.add("bg-gradient-to-br");
+        setSubmitButtonContent("Join Us");
+        // Handle unexpected errors
+      }
     }
   };
 
@@ -85,12 +163,23 @@ export default function joinus() {
       <section id="signupform" className="flex flex-col items-center bg-white px-2 py-8 text-center font-inter text-black h-fit">
         <div className="px-4 py-8 max-w-[800px] flex flex-col items-center gap-y-2">
           <h2 className="text-2xl md:text-3xl">Stay Up To Date With Your Comunidad!</h2>
-          <p className="text-xl md:text-2xl font-light">Sign Up for The Monthly Hack</p>
-          <form className="my-6 flex h-10 gap-3" onSubmit={handleSubmit}>
-            <input className="w-52 rounded-[10px] pl-3 border-turquoise border-2 text-black text-md placeholder:text-md placeholder:font-medium md:w-64 md:text-lg md:placeholder:text-lg" type="email" name="email" value={email} onChange={onchange} placeholder="hacker@gmail.com"/>
-            <button className="m-0 rounded-lg border-none bg-gradient-to-br from-turquoise to-[#2BFEFF] p-0 px-3 font-medium text-black hover:border-none text-md w-fit hover:scale-110" type="submit">
-              Join Us
-            </button>
+          <div className="text-xl md:text-2xl font-light">{signupStatus}</div>
+          <form className="my-6 flex-col flex md:flex-row gap-3 h-fit" onSubmit={handleSubmit}>
+            <div className="flex flex-col gap-3 h-fit">
+              <div className="flex flex-row gap-2">
+                <label htmlFor="firstname" className="w-[120px] md:w-[135px] text-base md:text-lg text-cyan text-end">Your First Name:</label>
+                <input className="w-fit max-w-52 rounded-[10px] pl-3 border-turquoise border-2 text-black text-base placeholder:text-sm placeholder:font-medium md:w-64 md:text-lg md:placeholder:text-lg" type="text" name="firstname" value={fname} onChange={onchange} placeholder="Juan"/>
+              </div>
+              <div className="flex flex-row gap-2">
+                <label htmlFor="lastname" className="w-[120px] md:w-[135px] text-base md:text-lg text-cyan text-end">Your Last Name:</label>
+                <input className="w-fit max-w-52 rounded-[10px] pl-3 border-turquoise border-2 text-black text-base placeholder:text-sm placeholder:font-medium md:w-64 md:text-lg md:placeholder:text-lg" type="text" name="lastname" value={lname} onChange={onchange} placeholder="Herrera"/>
+              </div>
+              <div className="flex flex-row gap-2">
+                <label htmlFor="email" className="w-[120px] md:w-[135px] text-base md:text-lg text-cyan text-end">Your Email:</label>
+                <input className="w-fit max-w-52 rounded-[10px] pl-3 border-turquoise border-2 text-black text-base placeholder:text-sm placeholder:font-medium md:w-64 md:text-lg md:placeholder:text-lg" type="email" name="email" value={email} onChange={onchange} placeholder="juanherrera@gmail.com"/>
+              </div>
+            </div>
+            <button className={`m-0 rounded-lg bg-gradient-to-br from-turquoise to-[#2BFEFF] h-fit py-1 md:py-2 px-3 font-medium text-black text-md w-fit border-white border-3 hover:from-white hover:to-white hover:border-turquoise self-end`} type="submit">{submitButtonContent}</button>
           </form>
           <p className="mb-7 text-xl md:text-2xl font-light">We send out monthly newsletters with innovator resources and events happening in Austin and beyond.</p>
           <p className="mb-4 text-xl font-medium md:text-2xl"> Ways to Follow the Community</p>
@@ -98,7 +187,7 @@ export default function joinus() {
             {
               socials.map((s) => {
                 return (
-                  <Link href={s.url} target="_blank" className="hover:scale-125">
+                  <Link key={s.alt} href={s.url} target="_blank" className="hover:scale-125">
                     <Image
                       className="h-8 w-auto md:h-10"
                       src={s.icon}
@@ -114,7 +203,7 @@ export default function joinus() {
       <section className="mx-auto font-inter">
         {
           Object.entries(featured).map(([name, data]) => (
-            <div className={"md:flex " + data.flex}>
+            <div key={name} className={"md:flex " + data.flex}>
               <div className="relative md:basis-1/2">
                 <img className="w-full" src={data.bg}/>
                 <div className={"absolute inset-0 flex items-end justify-end bg-" + data.color + "/80 p-5 text-white md:px-10"}>
