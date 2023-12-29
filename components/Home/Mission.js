@@ -1,51 +1,82 @@
-import styled from 'styled-components';
-
-const Section = styled.section`
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0 auto;
-  gap: 1rem;
-  div {
-    margin: 0 1rem;
-  }
-  @media (min-width: 768px) {
-    flex-wrap: nowrap;
-    grid-template-columns: repeat(3, 1fr);
-  }
-`;
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import WorldRender from "../WorldConRender";
+import ArrowLink from "./Links/arrowlink";
 
 export default function Mission() {
+  const [isClient, setIsClient] = useState(false); // State to determine if code is running on the client
+
+  useEffect(() => {
+    setIsClient(true); // Set isClient to true when component is mounted on the client side
+  }, []);
+
   return (
-    <Section>
-      <div>
-        <h4>Help🧭</h4>
-        <p>
-          Hispanic Hackers helps cultivate diversity in the Tech Community
-          through our informative and thought-provoking monthly meetups
-          surrounding the topics in the Latino Community. Our three core values
-          Help, Hack and Hire provide support and connect Latinos across the
-          Tech Industry in Austin, TX.
-        </p>
+    <section className="flex flex-col bg-cyan md:grid md:grid-cols-2 md:grid-rows-3">
+      {isClient && <WorldRender />}
+
+      <div className=" mb-10 ml-10 h-max text-center text-white mt-6 lg:mt-20 2xl:ml-60 lg:ml-18 max-w-[600px] lg:ml-20 md:mb-0">
+        <h2 className="text-left text-2xl font-sans-serif lg:text-left md:mt-10 lg:text-3xl">
+          Austin born, <br></br>
+          <span className="w-full font-bebas text-5xl lg:text-6xl">
+            LATINO-RAISED.<br></br>
+          </span>
+          <span className="ml-4  text-center font-serif text-xl font-light lg:ml-12 lg:text-2xl">
+            (Hecho en Austin por Latinos)
+          </span>
+        </h2>
+        <div className="mt-5 text-left text-xl  lg:ml-10 lg:mr-10 lg:text-left lg:text-2xl ">
+          <p>Hispanic Hackers is an inclusive community of software developers,
+          entrepreneurs, & ambitious innovators of Latino/Hispanic ethnicity.</p>
+          <br></br>
+          <div
+            className="ml-8 mr-44 inline-flex w-max text-xl font-light text-white lg:ml-10 lg:ml-24 lg:text-2xl"
+          >
+            <ArrowLink
+                details={{ link: "Join Our Community", url: "/join", target:"", color: "white" }}
+            ></ArrowLink>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Hack 🔭</h4>
-        <p>
-          Hispanic Hackers use technology as a conduit to empower our community.
-          During our Hack series, we present topics relevant to Hispanics in
-          Tech with a goal to learn from each other and provide an environment
-          to share opinions and different points of view.
-        </p>
+      <div className="inline-flex h-full lg:h-96 2xl:ml-60 justify-center">
+        <img
+          className="md:mt-18 h-80 lg:h-[400px] lg:mt-2"
+          src="/static/images/satellite.webp"
+          alt="Satelite"
+        />
       </div>
-      <div>
-        <h4>Hire ⚖️</h4>
-        <p>
-          Hispanic Hackers serve as a liaison between companies hoping to hire a
-          more diverse workforce and technology professionals searching for the
-          next step in their career. Coding Interview Practices and other
-          workforce development programs represent some of our leadership in
-          promoting diversity.
-        </p>
+      <div className=" ml-6 h-max text-white pb-12 md:col-span-1 max-w-[600px] lg:ml-20">
+        <h2 className="mt-6 text-left text-2xl font-light md:mt-2 lg:text-3xl">
+          Participate from <br></br>
+          <span className="text-left font-bebas text-5xl lg:text-left ">
+            AROUND THE WORLD.
+          </span>
+        </h2>
+        <div className="text-left text-xl lg:text-left mt-3 lg:text-2xl">
+          <p>Join Hispanic Hackers on Google Meet, Meetup, Discord and
+          beyond.</p>
+          <div
+            className="flex w-max p-1 text-xl text-white  sm:ml-5 lg:text-2xl items-center gap-x-2 mt-2"
+          >
+            <Link href="https://www.meetup.com/austin-hispanic-hackers-meetup/" target="_blank" className="cursor-pointer">
+              <img
+                className="h-[50px] hover:opacity-70 cursor-pointer"
+                src="/static/images/meetup-logo.webp"
+                alt="Meetup Logo"
+              />
+            </Link>
+            <Link href="https://discord.com/invite/h5eSJwR6pK" target="_blank" className="cursor-pointer">
+              <img
+                className="h-[30px] text-xl mr-3 hover:opacity-70 cursor-pointer lg:text-2xl"
+                src="/static/images/discord-mark-white.svg"
+                alt="Meetup Logo"
+              />
+            </Link>
+            <ArrowLink
+                details={{ link: "Find an Event", url: "https://www.meetup.com/austin-hispanic-hackers-meetup/", target:"_blank", color: "white" }}
+            ></ArrowLink>
+          </div>
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

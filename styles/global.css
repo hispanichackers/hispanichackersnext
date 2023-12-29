@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  @apply mx-0 mb-0 mt-[150px] h-[150px] md:mt-[122px] md:h-[122px];
+}
+
+h1 {
+  @apply font-bebas text-7xl;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+.wrapper {
+  @apply container mx-auto px-4 md:px-0;
+}
+
+.instagram-icon {
+  color: white;
+  background: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+}
+
+.resourcesToggled {
+  background-color: white;
+  color: #267e7e;
+}
+
+.resourceButton {
+  background-color: var(--buttoncolor);
+  border-color: var(--buttoncolor);
+  fill: white;
+}
+
+.resourceButtonToggled {
+  background-color: white;
+  color: var(--buttoncolor);
+  fill: var(--buttoncolor);
+}
+
+.resourceButton:hover {
+  background-color: white;
+  color: var(--buttoncolor);
+  fill: var(--buttoncolor);
+}

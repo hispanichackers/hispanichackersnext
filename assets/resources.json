@@ -1,0 +1,212 @@
+{
+    "Join Hispanic Hackers": {
+        "text": "Join us and get connected with your one-stop-shop for getting in touch with industry professionals, opportunities, and resources.",
+        "icon": "/static/images/hispanic-hackers-icon.webp",
+        "link": {
+            "url": "/join",
+            "text": "Join Our Familia",
+            "target": ""
+        },
+        "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "networking", "volunteer"]
+    },
+    "Hispanic Hackers Office Hours": {
+        "text": "Hispanic Hackers hosts weekly online office hours where we chat about our latest projects, bugs, interests.",
+        "icon": "/static/images/weekly-to-do.webp",
+        "link": {
+            "url": "https://discord.gg/67nEABfYcn",
+            "text": "Join an Online Social",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "volunteer"]
+    },
+    "Free Udemy Courses Through GALE": {
+        "text": "GALE Presents provides a free version of the Udemy platform through public libraries and institutions.",
+        "icon": "/static/images/gale-logo.webp",
+        "link": {
+            "url": "https://link.gale.com/apps/UDEMY",
+            "text": "Learn for Free",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students", "tool"]
+    },
+    "W3Schools Coding Tutorials": {
+        "text": "W3Schools is a free educational website providing resources for learning code. W3Schools is and will always be a completely free developer resource.",
+        "icon": "/static/images/w3.webp",
+        "link": {
+            "url": "https://www.w3schools.com",
+            "text": "Learn to Code",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "tool"]
+    },
+    "Hispanic Hackers Events": {
+        "text": "Hispanic Hackers hosts Meetups in Austin and online! Join us for a social, professional event, or office hours.",
+        "icon": "/static/images/meetup-logo.webp",
+        "link": {
+            "url": "https://www.meetup.com/austin-hispanic-hackers-meetup/",
+            "text": "Attend an Event",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "networking", "volunteer"]
+    },
+    "Austin Public Library": {
+        "text": "Austin Public Library (APL) is a free resource for residents living in Austin, Texas, providing library programs, technology, collections, and space at 20 library branches.",
+        "icon": "/static/images/apl.webp",
+        "link": {
+            "url": "https://library.austintexas.govY",
+            "text": "Find Austin Resources",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students"]
+    },
+    "Round Rock Public Library": {
+        "text": "If you're a resident of Round Rock, Texas, RRPL is a free resource alternative to the Austin Public Library, providing much of the same services.",
+        "icon": "/static/images/rrpl.webp",
+        "link": {
+            "url": "https://www.roundrocktexas.gov/city-departments/library-home/",
+            "text": "Find Round Rock Resources",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students"]
+    },
+    "Latinas in Tech": {
+        "text": "Latinas in Tech is a non-profit organization with the aim to connect, support, and empower Latina women working in tech. LiT works to create safe spaces for learning, mentorship and recruitment.",
+        "icon": "/static/images/lit.webp",
+        "link": {
+            "url": "https://www.latinasintech.org",
+            "text": "Connect with LiT",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits", "networking", "volunteer"]
+    },
+    "Techqueria": {
+        "text": "Techqueria is a non-profit organization aiming to empower Latiné professionals and support their advancement in the tech industry with educational initiatives, networking opportunities, or other forms of assistance",
+        "icon": "/static/images/techqueria.webp",
+        "link": {
+            "url": "https://www.techqueria.org",
+            "text": "Connect with Techqueria",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits", "networking", "volunteer"]
+    },
+    "AUTMHQ": {
+        "text": "Austin Urban Tech Movement is a non-profit organization bridging the gap between the Black and Hispanic communities and the technology industry through job placement, career development, and networking opportunities.",
+        "icon": null,
+        "link": {
+            "url": "https://www.autmhq.org",
+            "text": "Connect with AUTMHQ",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "nonprofits", "volunteer"]
+    },
+    "FIESTA": {
+        "text": "New to Austin? Trying to break into the tech space? FIESTA stands for Founders, Investors, Entrepreneurs, Startups, Techies, and Austin newcomers and is Austin, Texas' fastest growing founder meetup.",
+        "icon": "/static/images/fiesta.webp",
+        "link": {
+            "url": "https://www.fiesta.community",
+            "text": "Connect with FIESTA",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "networking", "nonprofits"]
+    },
+    "SHPE": {
+        "text": "The Society of Hispanic Professional Engineers is a non-profit for engineers, computer scientists, mathematicians, scientists, and more with national professional and university chapters.",
+        "icon": "/static/images/shpe.webp",
+        "link": {
+            "url": "https://www.shpe.org",
+            "text": "Connect with SHPE",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "nonprofits", "networking", "volunteer", "scholarships"]
+    },
+    "Prospanica": {
+        "text": "Originally the National Society of Hispanic MBA's, Prospanica advocates for the advancement of Hispanic professionals, finding innovative avenues for our community to achieve its full potential.",
+        "icon": "/static/images/prospanica.webp",
+        "link": {
+            "url": "https://www.prospanica.org",
+            "text": "Connect with Prospanica",
+            "target": "_blank"
+        },
+        "tags": ["entrepreneurs", "nonprofits","students",  "networking", "volunteer", "scholarships"]
+    },
+    "Latinitas": {
+        "text": "Latinitas is a non-profit with the goal of empowering all girls to innovate through media and technology. Latinitas hosts after school, summer camp, and coding programs.",
+        "icon": "/static/images/latinitas.webp",
+        "link": {
+            "url": "https://latinitasonline.org",
+            "text": "Connect with Latinitias",
+            "target": "_blank"
+        },
+        "tags": ["students", "nonprofits", "volunteer"]
+    },
+    "Austin Non-Profits": {
+        "text": "Austin Non-Profits is a coalition of non-profit organizations with the goal of sharing resources, opportunities, and community across Austin.",
+        "icon": "/static/images/austin-nonprofit-logo.webp",
+        "link": {
+            "url": "https://www.drebarrera.com/austin-nonprofits/",
+            "text": "Find Your Non-Profit",
+            "target": "_blank"
+        },
+        "tags": ["nonprofits", "networking", "volunteer"]
+    },
+    "ChatGPT": {
+        "text": "ChatGPT is a free AI system offering a live chatbot with the capability of outlining code, writing content, and providing relatively accurate information.",
+        "icon": "/static/images/chatgpt.webp",
+        "link": {
+            "url": "https://chat.openai.com",
+            "text": "Ask AI",
+            "target": "_blank"
+        },
+        "tags": ["general", "developers", "entrepreneurs", "students", "nonprofits", "tool"]
+    },
+    "Visual Studio Code": {
+        "text": "VSCode is one of the most popular Integrated Develpment Environments (IDEs) used by programmers. It offers an integrated system for almost every major programming language.",
+        "icon": "/static/images/vscode.webp",
+        "link": {
+            "url": "https://code.visualstudio.comi",
+            "text": "Start a Project",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "tool"]
+    },
+    "Inkscape": {
+        "text": "Inkscape is a free alternative to Adobe Illustrator used to create vector graphics, logos, and art.",
+        "icon": "/static/images/inkscape.webp",
+        "link": {
+            "url": "https://inkscape.org",
+            "text": "Start a Project",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "students", "tool"]
+    },
+    "Gimp": {
+        "text": "Gimp is a free alternative to Adobe Photoshop used to edit photos and create graphics, logos, and art.",
+        "icon": "/static/images/gimp.webp",
+        "link": {
+            "url": "https://www.gimp.org",
+            "text": "Start a Project",
+            "target": "_blank"
+        },
+        "tags": ["developers", "entrepreneurs", "students", "tool"]
+    },
+    "Toools.design": {
+        "text": "Looking for the right tool? Toools is a catalogue of free and paid tech and design resources with a list of websites offering icons, photos, fonts, and more.",
+        "icon": "/static/images/toools.svg",
+        "link": {
+            "url": "https://www.toools.design",
+            "text": "Find Developer Resources",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "tool"]
+    },
+    "Figma": {
+        "text": "Figma is one of the most popular prototyping interfaces. Offering a free version with online collaboration options as well as a desktop app, Figma is simple and used across the industry.",
+        "icon": "/static/images/figma.webp",
+        "link": {
+            "url": "https://www.figma.com/",
+            "text": "Start Prototyping",
+            "target": "_blank"
+        },
+        "tags": ["developers", "students", "entrepreneurs", "tool"]
+    }
+}
