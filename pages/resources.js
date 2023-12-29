@@ -95,8 +95,8 @@ export default function Resources(props) {
     <Layout {...props}>
       <section className="grid isolate">
         <Image
-          src="/static/images/Austin-skyline-daytime.jpg"
-          alt="Techqueria Logo"
+          src="/static/images/Austin-skyline-daytime.webp"
+          alt="Austin Skyline"
           width={2560}
           height={250}
           priority

@@ -49,7 +49,7 @@ export default function Contact() {
 
   if (formStatus) {
     return (
-      <section className="w-full h-full md:min-h-screen bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center grid text-white">
+      <section className="w-full h-full md:min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
         <div className="h-full p-4 bg-orange/80 md:p-16 flex flex-col">
           <div className="flex flex-row gap-x-5 mt-8 md:mt-10 items-center">
             <div className="flex flex-col">
@@ -65,7 +65,7 @@ export default function Contact() {
     );
   } else {
     return (
-      <section className="w-full h-full md:min-h-screen bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center grid text-white">
+      <section className="w-full h-full md:min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
         <div className="h-full p-4 bg-orange/80 md:p-16 flex flex-col">
           <div className="flex flex-row gap-x-5 mt-8 md:mt-10 items-center">
             <div className="flex flex-col">
