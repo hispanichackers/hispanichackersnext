@@ -9,7 +9,7 @@ export default function Intro() {
   ];
   return (
     <section className="font-inter">
-      <div className="w-full h-full bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center justify-center items-center grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full h-full bg-[url('/static/images/hero.webp')] bg-cover bg-center justify-center items-center grid grid-cols-1 md:grid-cols-2">
         <div className="bg-orange/75 h-full ">
           <h1 className=" font-inter text-2xl text-white mx-15 ml-6 text-left my-5 font-normal md:mt-10 lg:mt-20 lg:text-3xl lg:ml-16  ">
              Join our Comunidad of <br></br>

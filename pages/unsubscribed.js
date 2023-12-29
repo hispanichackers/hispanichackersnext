@@ -14,7 +14,7 @@ export default function Unsubscribe() {
 
     return (
         <Layout>
-            <section className="w-full min-h-screen bg-[url('https://i.imgur.com/Brwm73m.jpg')] bg-cover bg-center grid text-white">
+            <section className="w-full min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
                 <div className="h-full p-4 bg-orange/80 md:p-16 flex flex-col">
                     <div className="flex flex-row gap-3 items-center">
                         <h1 className="text-6xl md:text-7xl">YOU HAVE BEEN UNSUBSCRIBED.</h1>

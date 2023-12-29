@@ -29,7 +29,7 @@ export default function Mission() {
           entrepreneurs, & ambitious innovators of Latino/Hispanic ethnicity.</p>
           <br></br>
           <div
-            className="ml-8 mr-44 inline-flex w-max text-xl font-light text-white lg:ml-10 lg:ml-24 lg:text-2xl"
+            className="ml-8 inline-flex w-max text-xl font-light text-white lg:ml-24 lg:text-2xl"
           >
             <ArrowLink
                 details={{ link: "Join Our Community", url: "/join", target:"", color: "white" }}
