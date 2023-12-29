@@ -10,7 +10,7 @@ export default function Footer(props) {
     <footer className="p-4 bg-black text-white">
       <div className="wrapper flex flex-col gap-2 xl:flex-row justify-between items-center">
       <Menus {...props} fontColor="text-white" font="bold" />
-      <p className="flex whitespace-pre-wrap items-center">
+      <p className="whitespace-pre-wrap items-center hidden md:flex">
         Made with coffee, cumbia, and cariño. With <FcLike /> in {new Date().getFullYear()}.
       </p>
       {/*<SocialsHH />*/}
