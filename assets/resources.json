@@ -9,9 +9,19 @@
         },
         "tags": ["general", "developers", "entrepreneurs", "nonprofits", "students", "networking", "volunteer"]
     },
+    "Tech Career Mentorship": {
+        "text": "Working to build your career or startup? Join the #mentorship channel on our Discord to request a mentor in industry.",
+        "icon": "/static/images/weekly-to-do.webp",
+        "link": {
+            "url": "https://discord.gg/67nEABfYcn",
+            "text": "Join on Discord",
+            "target": "_blank"
+        },
+        "tags": ["networking", "volunteer"]
+    },
     "Hispanic Hackers Office Hours": {
         "text": "Hispanic Hackers hosts weekly online office hours where we chat about our latest projects, bugs, interests.",
-        "icon": "/static/images/weekly-to-do.webp",
+        "icon": "/static/images/discord-mark-color.svg",
         "link": {
             "url": "https://discord.gg/67nEABfYcn",
             "text": "Join an Online Social",
