@@ -22,23 +22,37 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    if (!accessKey) {
+      setMessage("Contact form is not configured.");
+      return;
+    }
+
     setSubmitButtonContent(<img src="/static/images/loading.gif" className="h-6 w-auto"/>);
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(query),
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: query.name,
+          email: query.email,
+          message: query.message,
+          subject: "Hispanic Hackers — contact form",
+        }),
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         setFormStatus(true);
       } else {
-        const data = await response.json();
-        console.error('Form submission failed:', data.error);
+        console.error("Form submission failed:", data.message || data);
         setSubmitButtonContent("Send");
-        setMessage("Message failed to send. Please try again.");
+        setMessage(data.message || "Message failed to send. Please try again.");
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -49,8 +63,8 @@ export default function Contact() {
 
   if (formStatus) {
     return (
-      <section className="w-full h-full md:min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
-        <div className="h-full p-4 bg-orange/80 md:p-16 flex flex-col">
+      <section className="w-full min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
+        <div className="min-h-screen p-4 bg-orange/80 md:p-16 flex flex-col">
           <div className="flex flex-row gap-x-5 mt-8 md:mt-10 items-center">
             <div className="flex flex-col">
               <h1 className="text-5xl md:text-6xl">SEND US A BYTE OR TWO</h1>
@@ -65,8 +79,8 @@ export default function Contact() {
     );
   } else {
     return (
-      <section className="w-full h-full md:min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
-        <div className="h-full p-4 bg-orange/80 md:p-16 flex flex-col">
+      <section className="w-full min-h-screen bg-[url('/static/images/hero.webp')] bg-cover bg-center grid text-white">
+        <div className="min-h-screen p-4 bg-orange/80 md:p-16 flex flex-col">
           <div className="flex flex-row gap-x-5 mt-8 md:mt-10 items-center">
             <div className="flex flex-col">
               <h1 className="text-5xl md:text-6xl">SEND US A BYTE OR TWO</h1>
